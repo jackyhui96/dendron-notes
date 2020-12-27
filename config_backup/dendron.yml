@@ -1,0 +1,20 @@
+version: 1
+vaults:
+    -
+        fsPath: repos/dendron-notes
+        remote:
+            type: git
+            url: 'git@github.com:jackyhui96/dendron-notes.git'
+        name: notes
+    -
+        fsPath: repos/dendron-personal
+        remote:
+            type: git
+            url: 'git@github.com:jackyhui96/dendron-personal.git'
+        name: personal
+site:
+    copyAssets: true
+    siteHierarchies:
+        - root
+    siteRootDir: docs
+    usePrettyRefs: true
