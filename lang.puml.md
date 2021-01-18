@@ -2,7 +2,7 @@
 id: 35a22ebd-29ee-4ecf-8068-74347c4578b7
 title: Puml
 desc: ''
-updated: 1609278199564
+updated: 1611006735220
 created: 1605773790054
 ---
 
@@ -35,3 +35,6 @@ skinparam component {
 }
 @enduml
 ```
+
+## Formatting
+https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
