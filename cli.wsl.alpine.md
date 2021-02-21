@@ -2,7 +2,7 @@
 id: c671e95d-c5ee-4567-90af-de3931accfd8
 title: Alpine
 desc: ''
-updated: 1613403910534
+updated: 1613496927467
 created: 1613387590453
 ---
 
@@ -42,5 +42,11 @@ wsl --set-default alpine
 ## Install Docker CLI
 apk add docker-cli
 
+## Install VIM
+apk add vim
+
+## Dendron PlantUML Setup
+apk add --no-cache graphviz ttf-droid ttf-droid-nonlatin
+apk add openjdk11
 ```
 
