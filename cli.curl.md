@@ -2,7 +2,7 @@
 id: c435c385-eb67-42a3-815c-a1eccc285296
 title: Curl
 desc: ''
-updated: 1595952505020
+updated: 1623156404413
 created: 1595952505020
 ---
 # Overview
@@ -109,4 +109,7 @@ curl http://www.weridserver.com:8000/-> get website using port 8000
 curl --data "name=kevin" http://www.miigroups.com/form
 curl --data-urlencode "name=kevin" http://www.miigroups.com/form
 curl --data "param1=value1&param2=value2" https://example.com/resource.cgi
+
+# urlencode a string
+date | curl -Gso /dev/null -w %{url_effective} --data-urlencode @- "" | sed -E 's/..(.*).../\1/'
 ```

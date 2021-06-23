@@ -45,6 +45,10 @@ https://www.theerlangelist.com/article/sequences
 https://adoptingerlang.org/docs/cheat_sheets/
 http://beam-wisdoms.clau.se/en/latest/
 
+## ETS Scalability
+https://www.researchgate.net/publication/262172496_On_the_scalability_of_the_Erlang_term_storage
+http://blog.erlang.org/the-new-scalable-ets-ordered_set/#benchmark
+
 ## Behaviours
 Not all OTP behaviours are listed here, only thee most frequently-used ones.
 
