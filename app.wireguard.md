@@ -2,7 +2,7 @@
 id: 792ced21-aea6-42c6-ac34-c4e613bbb374
 title: Wireguard
 desc: ''
-updated: 1613838559906
+updated: 1614451360150
 created: 1613812652776
 ---
 
@@ -51,7 +51,7 @@ docker run -d \
 -e SERVERURL=xujunjie-pi.hopto.org \
 -e SERVERPORT=51820 \
 -e PEERS=3 \
--e PEERDNS=auto \
+-e PEERDNS=192.168.208.102 \
 -e INTERNAL_SUBNET=10.13.13.0 \
 -p 51820:51820/udp \
 -v /usr/local/docker_apps/wireguard/config:/config \
@@ -64,6 +64,17 @@ linuxserver/wireguard
 After you execute the docker run command, the container will install the required kernel headers for your operating system to be able to effectively run Wireguard. Depending on your system this process could take a few minutes.
 
 After the container setup process is completed, the terminal will display QR codes. Do not close your window, you will need to scan these QR codes later. You can scan these QR codes with the mobile applications to instantly create the Wireguard profile on your mobile devices. The QR codes are the easiest and quickest way to get Wireguard up and running on your mobile devices.
+
+## MTU fixes
+```sh
+## Add the below to the PostUp section of the server config
+iptables -A FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+
+## Add the below to the PostDown section of the server config
+iptables -D FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+```
+_Reference: https://keremerkan.net/posts/wireguard-mtu-fixes/_
+
 
 ## References
 _https://codeopolis.com/posts/installing-wireguard-in-docker/_

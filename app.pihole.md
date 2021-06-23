@@ -2,7 +2,7 @@
 id: e363cde0-76cb-4f3b-91c9-7709ebbbc04f
 title: Pihole
 desc: ''
-updated: 1613950936702
+updated: 1614422739147
 created: 1613900690739
 ---
 
@@ -29,8 +29,8 @@ docker run -d \
 -v pihole:/etc/pihole \
 -v dnsmasq:/etc/dnsmasq.d \
 -p 80:80 \
--p 192.168.0.105:53:53/tcp \
--p 192.168.0.105:53:53/udp \
+-p 192.168.208.102:53:53/tcp \
+-p 192.168.208.102:53:53/udp \
 --restart=unless-stopped \
 pihole/pihole:armv7
 
@@ -40,12 +40,12 @@ docker run -d \
 --name=pihole \
 -e TZ=Europe/London \
 -e WEBPASSWORD=change_this_password \
--e ServerIP=192.168.0.105 \
+-e ServerIP=192.168.208.102 \
 -v pihole:/etc/pihole \
 -v dnsmasq:/etc/dnsmasq.d \
 -p 80:80 \
--p 192.168.0.105:53:53/tcp \
--p 192.168.0.105:53:53/udp \
+-p 192.168.208.102:53:53/tcp \
+-p 192.168.208.102:53:53/udp \
 --restart=unless-stopped \
 pihole/pihole:armv7
 ```
@@ -76,3 +76,5 @@ Based on `/u/AtariDump` reddit comment https://www.reddit.com/r/pihole/comments/
 Regex list: https://github.com/mmotti/pihole-regex/blob/master/regex.list
 
 
+## Seeing lots of queries for lb._dns-sd._udp.<IP_ADDRESS>.in-addr.arpa
+_https://github.com/pi-hole/pi-hole/issues/2654_
