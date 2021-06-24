@@ -1,10 +1,10 @@
 ---
 id: 69cc4b72-a98e-4133-8dcc-2b45d2456101
 title: Tar
-desc: ''
+desc: null
 updated: 1595952505022
-created: 1595952505022
 ---
+
 # Overview
 - creates and manipulates streaming archive files
 
@@ -25,23 +25,21 @@ tar [bundle-flags <args] [<file> | <pattern> ...]
 - -z: file archive through gzip
 - -C: change directory before adding
 
-# Cook
+# Examples
 
-### Create tgz
-
-```sh
+```
+## Create tgz
 tar -czvf archive.tgz source_file
 
-```
+## Create tar.gz 
+tar -cvzf archive.tar.gz source_file
 
-### Open a tar 
-
-```sh
+## Open a tar
 tar -xvf yourfile.tar
 
-```
-
-### Open a bz2 file
-```sh
+## Open a bz2 file
 tar -vxjf mm_binary.tar.bz2
+
+## Open a tar.gz
+tar -xvzf archive.tar.gz 
 ```
