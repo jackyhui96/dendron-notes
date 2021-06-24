@@ -2,9 +2,10 @@
 id: c435c385-eb67-42a3-815c-a1eccc285296
 title: Curl
 desc: ''
-updated: 1623156404413
+updated: 1624538684247
 created: 1595952505020
 ---
+
 # Overview
 - command line url reference
 
@@ -97,7 +98,7 @@ curl <url|ip>:[port]
 
 - --trace-ascii: store log of requests
 
-# Cook
+# Examples
 
 ```sh
 # get
