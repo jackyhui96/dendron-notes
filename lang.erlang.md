@@ -2,7 +2,7 @@
 id: 8af8ad5e-138c-4471-b670-3d3474d07401
 title: Erlang
 desc: ''
-updated: 1624463106237
+updated: 1625481523541
 created: 1602246697398
 stub: false
 ---
@@ -40,6 +40,10 @@ _Reference: https://medium.com/@bruno_sapienza/when-to-return-the-ok-in-elixir-1
 ## Data Comparisons
 https://www.theerlangelist.com/article/sequences
 
+## try catch vs catch
+catch will always generate a stacktrace when catching an exception, so it slower, than try.
+try avoids building a stacktrace if you don't ask for it
+https://www.programmersought.com/article/91291342145/
 
 ## Good resources
 https://adoptingerlang.org/docs/cheat_sheets/
