@@ -1,6 +1,6 @@
 ---
 created: 2022-01-19T21:19:17+00:00
-modified: 2022-01-19T21:41:12+00:00
+modified: 2022-01-19T21:52:45+00:00
 ---
 
 # Grocy
@@ -16,3 +16,5 @@ docker run -d \
   --restart unless-stopped \
   lscr.io/linuxserver/grocy:arm32v7-latest
 ```
+
+Fixed libseccomp following https://docs.linuxserver.io/faq#libseccomp
