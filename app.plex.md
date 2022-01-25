@@ -2,7 +2,7 @@
 id: 19b67356-8767-4a7e-bb63-9176afa9f1f2
 title: Plexmediaserver
 desc: ''
-updated: 1599322955852
+updated: 1636054762895
 created: 1599322955852
 ---
 
@@ -43,3 +43,44 @@ _Reference: https://support.plex.tv/articles/201370363-move-an-install-to-anothe
 Follow the steps in the reference to fix issues with media getting stuck in the 'Continue Watching' section despite being marked as unplayed.
 
 _Reference: [Plex:Repair a Corrupt Database](https://support.plex.tv/articles/201100678-repair-a-corrupt-database/?_ga=2.121149832.1231479726.1601827334-1128507795.1600200934)_
+
+
+## Docker install
+```sh
+docker run -d \
+  --name=plex \
+  --net=host \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e VERSION=docker \
+  -v /usr/local/docker_apps/plex/config:/config \
+  -v /media/usb1:/media \
+  --restart unless-stopped \
+  linuxserver/plex:arm32v7-latest
+```
+
+### Support
+```sh
+## Shell access whilst the container is running:
+docker exec -it plex /bin/bash
+
+## To monitor the logs of the container in realtime:
+docker logs -f plex
+
+## Container version number
+docker inspect -f '{{ index .Config.Labels "build_version" }}' plex
+
+## Image version number
+docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/plex:arm32v7-latest
+```
+
+### Error update libseccomp2
+`libc++abi: terminating with uncaught exception of type std::__2::system_error: clock_gettime(CLOCK_MONOTONIC) failed: Operation not permitted`
+
+Add the backports repo for DebianBuster:
+```bash
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC 648ACFD622F3D138
+echo "deb http://deb.debian.org/debian buster-backports main" | sudo tee -a /etc/apt/sources.list.d/buster-backports.list
+sudo apt update
+sudo apt install -t buster-backports libseccomp2
+```
