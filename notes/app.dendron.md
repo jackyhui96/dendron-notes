@@ -2,7 +2,7 @@
 id: 3bfa34fc-5a50-4d06-928a-30c2ce6afbc1
 title: Dendron
 desc: ''
-updated: 1652904161681
+updated: 1652951557114
 created: 1614090590691
 ---
 
@@ -28,3 +28,7 @@ Add in the `style.less`:
 * You can publish any vault you have by itself
 * You can share the vault with someone, and Dendron will work immediately when they open it in VSCode without having to set up workspaces
 * When you convert your vault to a remote vault, it will include all your settings and everything you need for Dendron
+
+## No PUML
+* Currently no support for PUML in dendron native preview, use mermaid instead
+* Issue tracked here https://github.com/dendronhq/dendron/issues/1279

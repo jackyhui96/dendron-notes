@@ -2,7 +2,7 @@
 id: 8af8ad5e-138c-4471-b670-3d3474d07401
 title: Erlang
 desc: ''
-updated: 1625481523541
+updated: 1643029363912
 created: 1602246697398
 ---
 
@@ -19,6 +19,17 @@ created: 1602246697398
 _References_
 http://erlang.2086793.n4.nabble.com/Efficiency-of-a-list-construction-td3538122.html#a3538379
 https://ferd.ca/erlang-s-tail-recursion-is-not-a-silver-bullet.html
+
+
+## Erlang Timers
+### Automatic cancellation of timers with erlang:send_after and erlang:start_timer
+* Timers created with the receiver specified by a pid, will automatically be cancelled when the receiver exits
+* http://erlang.org/documentation/doc-5.4.12/erts-5.4.12/doc/html/notes.html
+    * updated to cancel timer if pid dies/exits 5.4.11
+* https://erlang.org/doc/man/erlang.html#start_timer-4
+### Timers not working across nodes
+* erlang:send_after/start_timer does not working across nodes
+* https://stackoverflow.com/questions/46800163/are-erlangsend-after-3-and-timersend-after-3-intended-to-behave-differently
 
 ## Implementation of Erlang Maps
 - https://medium.com/@jlouis666/breaking-erlang-maps-1-31952b8729e6
@@ -124,3 +135,6 @@ _Reference: http://erlang.org/doc/apps/erts/crash_dump.html_
 ```sh
 docker run -it --rm --name erlang-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp erlang:23-alpine erl
 ```
+
+### weird inet_tcp, epmd error
+* usually some errors with 

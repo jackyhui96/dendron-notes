@@ -2,23 +2,14 @@
 id: ac615334-69f5-4f93-9ec1-7baf7006485e
 title: Test
 desc: ''
-updated: 1620648199647
+updated: 1647959690991
 created: 1610988868765
 ---
 
 # Erlang Tests
 
 
-## CT Suites
-```
-Run a single CT test which is defined in a group
-    - make ct-http t=http_compress:headers_dupe
 
-Run a single CT test if there are no groups
-    - make ct-http c=headers_dupe
-```
-
-## EUnit
 
 
 ## Test Tips
@@ -33,7 +24,7 @@ ls _rel/config/dte_web_com/dte/releases/config/*.config | erl -noshell -eval '
     Input = list_to_binary(io:get_chars("", 1000000)),
     Files = binary:split(Input, [<<"\n">>, <<" ">>], [global, trim_all]),
     io:format("Testing File ~p~n",[Files]),
-    CheckFun = 
+    CheckFun =
         fun(FileName) ->
             case file:consult(FileName) of
                 {ok,_} ->
@@ -48,4 +39,25 @@ ls _rel/config/dte_web_com/dte/releases/config/*.config | erl -noshell -eval '
         end,
     [CheckFun(File) || File <- Files]
 ' -eval 'init:stop()'
+```
+
+## Check which process has the most binaries
+f(Bins).
+Bins = fun() ->
+    lists:sort(
+    fun({K1,V1},{K2,V2}) -> {V1,K1} =< {V2,K2} end,
+    lists:foldl(
+        fun(P, A) ->
+        {binary, Bins} = erlang:process_info(P, binary),
+        [{P, length(Bins)}|A]
+        end, [],
+        processes()
+        )
+    )
+end.
+
+## Profiling and Benchmarking witihin remote shell
+```erlang
+eprof:start(), eprof:start_profiling([list_to_pid("<0.2415.0>")]).
+timer:sleep(10000), eprof:start_profiling(), eprof:analyze(total).
 ```

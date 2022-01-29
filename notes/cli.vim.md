@@ -2,7 +2,7 @@
 id: e30182bb-dec6-4f35-b19e-400478c4e0a3
 title: Vim
 desc: ''
-updated: 1608553308906
+updated: 1652951803670
 created: 1603196018803
 ---
 
@@ -37,4 +37,10 @@ Do this so that pasting doesn't go weird, when it sees a comment
 ```vim
 :set paste
 :set nopaste
+```
+
+## Line numbers
+```vim
+:set nu
+:set number
 ```

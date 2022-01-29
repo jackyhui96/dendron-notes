@@ -2,7 +2,7 @@
 id: efc3885a-03cf-478f-9e3b-89b0c1810d72
 title: Ssh
 desc: ''
-updated: 1617287520353
+updated: 1647247921382
 created: 1599322339965
 ---
 
@@ -11,6 +11,8 @@ created: 1599322339965
 ## No host checking and suppress SSH messages
 ```sh
 ssh -qo "StrictHostKeyChecking no" ${TMUXHOST}
+
+if [ ! -z "${TMUXHOST}" ]; then ssh -qo "StrictHostKeyChecking no" ${TMUXHOST}; fi
 ```
 
 ## Copying SSH key to remote-host
@@ -61,3 +63,6 @@ Copy contents of public file e.g. `~/.ssh/id_ed25519.pub`
 Go to settings of GitHub and add new ssh key and paste contents.
 SSH key looks like the following:
 `ssh-ed25519 <HASH> <EMAIL_ADDRESS>`
+
+### WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+`ssh-keygen -R [hostname]`

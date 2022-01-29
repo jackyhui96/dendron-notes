@@ -2,7 +2,7 @@
 id: ynvyojd8rxo87nwy7gxj3ea
 title: Grocy
 desc: ''
-updated: 1652817063128
+updated: 1652951623784
 created: '2022-01-19T21:19:17.000Z'
 modified: '2022-01-19T21:52:45.000Z'
 ---

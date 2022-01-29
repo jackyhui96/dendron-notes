@@ -2,7 +2,7 @@
 id: 93a5dc42-8663-4d3c-924f-82e8faa35a67
 title: Net
 desc: ''
-updated: 1619436847216
+updated: 1628871088008
 created: 1599406259569
 ---
 
@@ -20,6 +20,11 @@ dzdo sh -c "su -"
 
 iptables -t nat -A PREROUTING -p tcp --dport 8888 -j REDIRECT --to-port 3860
 ```
+
+## CAP
+* When a network partition failure happens should we decide to:
+    * Cancel the operation and thus decrease the availability but ensure consistency
+    * Proceed with the operation and thus provide availability but risk inconsistency
 
 ## Test connections
 ```sh
