@@ -1,3 +1,5 @@
 .dendron.cache.json
 
-.dendron.cache.*
+.dendron.cache.*.next
+
+.next
