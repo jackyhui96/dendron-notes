@@ -1,11 +1,9 @@
 {
     "folders": [
         {
-            "path": "vault"
+            "path": "notes",
+            "name": "vault"
         },
-        {
-            "path": "."
-        }
     ],
     "settings": {
         "dendron.rootDir": ".",
