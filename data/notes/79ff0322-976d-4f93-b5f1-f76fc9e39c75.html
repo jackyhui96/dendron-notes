@@ -1,0 +1,20 @@
+<h1 id="grep"><a aria-hidden="true" class="anchor-heading" href="#grep"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Grep</h1>
+<h1 id="grep-1"><a aria-hidden="true" class="anchor-heading" href="#grep-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Grep</h1>
+<h2 id="advanced-perl-patterns"><a aria-hidden="true" class="anchor-heading" href="#advanced-perl-patterns"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Advanced Perl Patterns</h2>
+<pre class="language-sh"><code class="language-sh">Extension         Meaning
+---------         -------
+(?:...)           Cluster-only parentheses, no capturing
+(?#...)           Comment, discard all text between the parens
+(?imsx-imsx)      Enable/disable pattern modifiers
+(?imsx-imsx:...)  Cluster-only parens with modifiers
+(?=...)           Positive lookahead assertion
+(?!...)           Negative lookahead assertion
+(?&#x3C;=...)          Positive lookbehind assertion
+(?&#x3C;!...)          Negative lookbehind assertion
+(?()...|...)      Match with if-then-else
+(?()...)          Match with if-then
+(?>...)           Match non-backtracking subpattern ("once-only")
+(?R)              Recursive pattern
+</code></pre>
+<p><em>Reference:</em>
+<a href="https://caspar.bgsu.edu/~courses/Stats/Labs/Handouts/grepadvanced.htm">https://caspar.bgsu.edu/~courses/Stats/Labs/Handouts/grepadvanced.htm</a></p>

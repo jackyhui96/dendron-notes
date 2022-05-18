@@ -1,0 +1,26 @@
+<h1 id="setup"><a aria-hidden="true" class="anchor-heading" href="#setup"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Setup</h1>
+<h1 id="setting-up-the-raspberri-pi"><a aria-hidden="true" class="anchor-heading" href="#setting-up-the-raspberri-pi"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Setting up the Raspberri Pi</h1>
+<h2 id="setup-steps"><a aria-hidden="true" class="anchor-heading" href="#setup-steps"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Setup Steps</h2>
+<ul>
+<li>Flash SD card</li>
+<li>Enable ssh following the instructions below</li>
+<li>Change password using <code>passwd</code> for the pi user</li>
+<li>Set the country using <code>raspi-config</code> in the locale options select <code>en_GB.UTF-8</code> and <code>en_US.UTF-8</code></li>
+<li>Install vim <code>sudo apt install vim</code></li>
+<li>Install docker </li>
+</ul>
+<h2 id="enable-ssh"><a aria-hidden="true" class="anchor-heading" href="#enable-ssh"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Enable SSH</h2>
+<p>SSH is disabled by default, enable this by adding an empty file named <code>ssh</code> to the boot partition of the SD card (this is the only folder that will appear to Windows)</p>
+<h2 id="installing-docker"><a aria-hidden="true" class="anchor-heading" href="#installing-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Installing Docker</h2>
+<ol>
+<li>Update and upgrade <code>sudo apt-get update &#x26;&#x26; sudo apt-get upgrade -y</code></li>
+<li>Download install script <code>curl -fsSL https://get.docker.com -o get-docker.sh</code> and execute <code>sudo sh get-docker.sh</code></li>
+<li>Add <code>pi</code> user to the docker group <code>sudo usermod -aG docker pi</code> (log out and in for changes to take place)</li>
+<li>Check docker version and info: <code>docker version</code> and <code>docker info</code></li>
+<li>Run hello world test container <code>docker run hello-world</code></li>
+</ol>
+<h2 id="uninstalling-docker"><a aria-hidden="true" class="anchor-heading" href="#uninstalling-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Uninstalling Docker</h2>
+<p>Delete using package manager:
+<code>sudo apt-get purge docker-ce</code>
+Remove leftover images, containers, volumes and other data:
+<code>sudo rm -rf /var/lib/docker</code></p>

@@ -1,0 +1,24 @@
+<h1 id="vim"><a aria-hidden="true" class="anchor-heading" href="#vim"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Vim</h1>
+<h1 id="vim-1"><a aria-hidden="true" class="anchor-heading" href="#vim-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>VIM</h1>
+<h2 id="regex-replace"><a aria-hidden="true" class="anchor-heading" href="#regex-replace"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Regex Replace</h2>
+<p>Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.</p>
+<pre class="language-vim"><code class="language-vim"><span class="token punctuation">:</span><span class="token operator">%</span>s<span class="token operator">/</span>foo<span class="token operator">/</span>bar<span class="token operator">/</span>g
+</code></pre>
+<p>Change each 'foo' to 'bar', but ask for confirmation first.</p>
+<pre class="language-vim"><code class="language-vim"><span class="token punctuation">:</span><span class="token operator">%</span>s<span class="token operator">/</span>foo<span class="token operator">/</span>bar<span class="token operator">/</span>gc
+</code></pre>
+<p>Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.</p>
+<pre class="language-vim"><code class="language-vim"><span class="token punctuation">:</span><span class="token operator">%</span>s<span class="token operator">/</span>\<span class="token operator">&#x3C;</span>foo\<span class="token operator">></span><span class="token operator">/</span>bar<span class="token operator">/</span>gc
+</code></pre>
+<h2 id="navigation"><a aria-hidden="true" class="anchor-heading" href="#navigation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Navigation</h2>
+<h3 id="moving-to-matching-braces"><a aria-hidden="true" class="anchor-heading" href="#moving-to-matching-braces"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Moving to matching braces</h3>
+<p>The <code>%</code> key can be used for the following :</p>
+<p>To jump to a matching opening or closing parenthesis, square bracket or a curly brace: <code>([{}])</code>
+To jump to start or end of a C-style comment: <code>/* */</code>.
+To jump to a matching C/C++ preprocessor conditional: <code>#if</code>, <code>#ifdef</code>, <code>#else</code>, <code>#elif</code>, <code>#endif</code>.
+To jump between appropriate keywords, if supported by the ftplugin file, for example, between <code>begin</code> and <code>end</code> in a Pascal program.</p>
+<h2 id="pasting-verbatim"><a aria-hidden="true" class="anchor-heading" href="#pasting-verbatim"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Pasting verbatim</h2>
+<p>Do this so that pasting doesn't go weird, when it sees a comment</p>
+<pre class="language-vim"><code class="language-vim"><span class="token punctuation">:</span><span class="token keyword">set</span> <span class="token builtin">paste</span>
+<span class="token punctuation">:</span><span class="token keyword">set</span> <span class="token builtin">nopaste</span>
+</code></pre>

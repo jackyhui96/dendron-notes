@@ -1,0 +1,74 @@
+<h1 id="dig"><a aria-hidden="true" class="anchor-heading" href="#dig"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dig</h1>
+<h1 id="overview"><a aria-hidden="true" class="anchor-heading" href="#overview"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Overview</h1>
+<p>dig (domain information groper) is a flexible tool for interrogating DNS name servers. It performs DNS lookups and
+displays the answers that are returned from the name server(s) that were queried. Most DNS administrators use dig to
+troubleshoot DNS problems because of its flexibility, ease of use and clarity of output. Other lookup tools tend to
+have less functionality than dig.</p>
+<h1 id="synopsis"><a aria-hidden="true" class="anchor-heading" href="#synopsis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Synopsis</h1>
+<pre class="language-sh"><code class="language-sh">dig [@server] [-b address] [-c class] [-f filename] [-k filename] [-m] [-p port#] [-q name] [-t type] [-v] [-x addr] [-y [hmac:]name:key] [-4] [-6] [name] [type] [class] [queryopt...]
+</code></pre>
+<h1 id="options"><a aria-hidden="true" class="anchor-heading" href="#options"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Options</h1>
+<ul>
+<li>[no]trace:
+<ul>
+<li>dig will act as the recursive nameserver: it  will make iterative queries to nameservers and follow referrals from the root, showing each step along the way</li>
+</ul>
+</li>
+<li>[no]short</li>
+<li>[no]recurse
+<ul>
+<li>default: true</li>
+</ul>
+</li>
+<li>[no]trace 
+<ul>
+<li>default: false</li>
+</ul>
+</li>
+</ul>
+<h1 id="example"><a aria-hidden="true" class="anchor-heading" href="#example"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Example</h1>
+<pre class="language-sh"><code class="language-sh">
+dig google.com
+
+; &#x3C;> DiG 9.3.3rc2 &#x3C;> www.google.com
+; (1 server found)
+;; global options: printcmd
+;; Got answer:
+;; ->>HEADER&#x3C;;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 3, ADDITIONAL: 3
+;; QUESTION SECTION:
+;www.google.com. IN A
+;; ANSWER SECTION:
+http://www.google.com/. 43200 IN A 200.99.187.2
+;; AUTHORITY SECTION:
+http://www.google.com/. 43200 IN NS ns2.google.com.
+http://www.google.com/. 43200 IN NS ns3.google.com.
+http://www.google.com/. 43200 IN NS ns1.google.com.
+;; ADDITIONAL SECTION:
+ns1.google.com. 43200 IN A 222.54.11.86
+ns2.google.com. 43200 IN A 220.225.37.222
+ns3.google.com. 43200 IN A 203.199.147.233
+;; Query time: 1 msec
+;; SERVER: 222.54.11.86#53(222.54.11.86)
+;; WHEN: Wed Nov 18 18:31:12 2009
+;; MSG SIZE rcvd: 152
+
+</code></pre>
+<h3 id="trace"><a aria-hidden="true" class="anchor-heading" href="#trace"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Trace</h3>
+<pre class="language-sh"><code class="language-sh">dig +trace kevinslin.com
+
+. NS l.root-servers.net
+com. NS g.gtld-servers.net
+kevinslin.com NS dns5-name-services.com.
+
+</code></pre>
+<h1 id="cook"><a aria-hidden="true" class="anchor-heading" href="#cook"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Cook</h1>
+<h3 id="specify-dns-server"><a aria-hidden="true" class="anchor-heading" href="#specify-dns-server"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Specify dns server</h3>
+<p>dig <a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@8.8.8.8 (Private)</a> hostname.com</p>
+<h3 id="look-for-name-server"><a aria-hidden="true" class="anchor-heading" href="#look-for-name-server"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Look for name server</h3>
+<p>dig kevinslin.com NS</p>
+<h1 id="faq"><a aria-hidden="true" class="anchor-heading" href="#faq"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FAQ</h1>
+<h3 id="how-does-dig-trace-work"><a aria-hidden="true" class="anchor-heading" href="#how-does-dig-trace-work"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>How does dig +trace work</h3>
+<ul>
+<li><a href="http://superuser.com/questions/715632/how-does-dig-trace-actually-work">http://superuser.com/questions/715632/how-does-dig-trace-actually-work</a></li>
+<li>series of dig +norecurse calls </li>
+</ul>

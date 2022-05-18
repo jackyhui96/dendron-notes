@@ -1,0 +1,32 @@
+<h1 id="tautulli"><a aria-hidden="true" class="anchor-heading" href="#tautulli"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tautulli</h1>
+<h1 id="tautulli-1"><a aria-hidden="true" class="anchor-heading" href="#tautulli-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tautulli</h1>
+<h2 id="running-using-docker"><a aria-hidden="true" class="anchor-heading" href="#running-using-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Running using Docker</h2>
+<pre class="language-sh"><code class="language-sh">docker run -d \
+  --name=tautulli \
+  --restart=unless-stopped \
+  -v &#x3C;path to data>:/config \
+  -e PUID=&#x3C;uid> \
+  -e PGID=&#x3C;gid> \
+  -e TZ=&#x3C;timezone> \
+  -p 8181:8181 \
+  tautulli/tautulli
+
+## e.g.
+
+docker run -d \
+  --name=tautulli \
+  --restart=unless-stopped \
+  -v /usr/local/docker_apps/tautulli/config:/config \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Europe/London \
+  -p 8181:8181 \
+  tautulli/tautulli
+</code></pre>
+<h2 id="updating-with-docker"><a aria-hidden="true" class="anchor-heading" href="#updating-with-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Updating with docker</h2>
+<ul>
+<li>Stop the Tautulli container: <code>docker stop tautulli</code></li>
+<li>Remove the Tautulli container: <code>docker rm tautulli</code></li>
+<li>Pull the latest update <code>docker pull tautulli/tautulli</code></li>
+<li>Run the Tautulli container with the same parameters as before: <code>docker run -d ...</code></li>
+</ul>

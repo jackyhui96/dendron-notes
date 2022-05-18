@@ -1,0 +1,488 @@
+{
+  "roots": [
+    {
+      "key": "root",
+      "title": "root",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "ced683be-fe67-4022-989f-abc6d311cb3a",
+          "title": "App",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "3bfa34fc-5a50-4d06-928a-30c2ce6afbc1",
+              "title": "Dendron",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "ynvyojd8rxo87nwy7gxj3ea",
+              "title": "Grocy",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "25210a99-0d6a-4df6-af95-8ed2835f1063",
+              "title": "Kitana",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "97d883eb-b758-4420-b402-8dada7e105bf",
+              "title": "Luci",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "e363cde0-76cb-4f3b-91c9-7709ebbbc04f",
+              "title": "Pihole",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "19b67356-8767-4a7e-bb63-9176afa9f1f2",
+              "title": "Plexmediaserver",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "b25f543e-1cbd-45c1-814d-2d245f4a12c5",
+              "title": "Portainer",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "502bf670-56f4-41ef-ab3b-5b05703bd407",
+              "title": "Tautulli",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "792ced21-aea6-42c6-ac34-c4e613bbb374",
+              "title": "Wireguard",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+          "title": "Cli",
+          "icon": "bookOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "af877716-9ab3-464e-a575-cde8d8ebbd8c",
+              "title": "Awk",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "9ee14e63-98a6-4ac0-ba74-e7cea15966d8",
+              "title": "Chkconfig",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "349ad6c9-07ef-4606-860d-37d83bc76467",
+              "title": "Cmd",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "92b8f111-16ee-460f-82f5-8f84c46ffcc0",
+              "title": "Column",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "c435c385-eb67-42a3-815c-a1eccc285296",
+              "title": "Curl",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "b8472372-5877-4c9f-9afd-375b56df18fe",
+              "title": "Dig",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "691068f4-01bd-4415-80ea-4d24f869962e",
+              "title": "Find",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "fde0884c-1f69-404e-9906-7f44903cdfb4",
+              "title": "Git",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "d0d5e5fb-fd00-4d0f-90a6-dbf3158497de",
+                  "title": "Env",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "79ff0322-976d-4f93-b5f1-f76fc9e39c75",
+              "title": "Grep",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "yPSbfSUiv5mdVJHX2LaBF",
+              "title": "Iptables",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "070c81bd-10c7-4106-b57c-1a2691be1aeb",
+              "title": "Ps",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "efc3885a-03cf-478f-9e3b-89b0c1810d72",
+              "title": "Ssh",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "69cc4b72-a98e-4133-8dcc-2b45d2456101",
+              "title": "Tar",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "90bd478b-7a43-4919-a4df-d0882e332b7e",
+              "title": "Tcpdump",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "760405d2-be1b-478f-9002-9ec19f2fcd75",
+              "title": "Tmux",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "58bf3dc7-8c82-4553-afa0-e255f9285e93",
+              "title": "Tr",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "e30182bb-dec6-4f35-b19e-400478c4e0a3",
+              "title": "Vim",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "013cdd92-74f7-45a0-850a-446b0364efb4",
+              "title": "Wsl",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "c671e95d-c5ee-4567-90af-de3931accfd8",
+                  "title": "Alpine",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "a44df307-1a67-417b-b733-da109c3be441",
+          "title": "Journal",
+          "icon": "bookOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "7f4a78d9-41c7-4753-8714-d91bc9794897",
+              "title": "Daily",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "3g8kwwze72yssn0v6zl3lq7",
+              "title": "Template",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "be556b93-fcad-4352-b96a-0089be9e4201",
+                  "title": "Daily",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+          "title": "Lang",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "8af8ad5e-138c-4471-b670-3d3474d07401",
+              "title": "Erlang",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "fbc7b495-4e18-4547-a795-9afa2805635a",
+                  "title": "Data",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "14c34d7c-644d-4cb8-9df3-d94cefa8fa74",
+                  "title": "Syntax",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "ac615334-69f5-4f93-9ec1-7baf7006485e",
+                  "title": "Test",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "4e41f042-daa2-45b2-ad77-87efa2322163",
+              "title": "Markdown",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "03d38906-77bd-43a1-b4e2-cfe8f9a800de",
+              "title": "Mermaid",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "35a22ebd-29ee-4ecf-8068-74347c4578b7",
+              "title": "Puml",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "93a5dc42-8663-4d3c-924f-82e8faa35a67",
+          "title": "Net",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "c3acb8fd-fcae-4210-8129-ab295e8d29e6",
+              "title": "Ip",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "f80d45a1-bd90-4097-96bc-0301fbc4d937",
+          "title": "Pi",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "67215e28-78b6-443a-916e-43d247a4dd2d",
+              "title": "Setup",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "19992660-3602-4c64-a3a5-e9c05f19ffac",
+          "title": "Scratch",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "3f157f98-5c61-4479-b311-956d4b0ef67a",
+          "title": "Vscode",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "0ac64a0f-5eb5-4e4c-9018-828ba3cfe3e2",
+              "title": "Ext",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "cbf8b0e6-f6d0-4924-9aa1-268571b03961",
+                  "title": "Simplevim",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "403": null,
+    "root": null,
+    "3f157f98-5c61-4479-b311-956d4b0ef67a": "root",
+    "0ac64a0f-5eb5-4e4c-9018-828ba3cfe3e2": "3f157f98-5c61-4479-b311-956d4b0ef67a",
+    "cbf8b0e6-f6d0-4924-9aa1-268571b03961": "0ac64a0f-5eb5-4e4c-9018-828ba3cfe3e2",
+    "19992660-3602-4c64-a3a5-e9c05f19ffac": "root",
+    "f80d45a1-bd90-4097-96bc-0301fbc4d937": "root",
+    "67215e28-78b6-443a-916e-43d247a4dd2d": "f80d45a1-bd90-4097-96bc-0301fbc4d937",
+    "93a5dc42-8663-4d3c-924f-82e8faa35a67": "root",
+    "c3acb8fd-fcae-4210-8129-ab295e8d29e6": "93a5dc42-8663-4d3c-924f-82e8faa35a67",
+    "b9686e84-d9a1-4dbb-8474-1a9c156d6d12": "root",
+    "35a22ebd-29ee-4ecf-8068-74347c4578b7": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+    "03d38906-77bd-43a1-b4e2-cfe8f9a800de": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+    "4e41f042-daa2-45b2-ad77-87efa2322163": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+    "8af8ad5e-138c-4471-b670-3d3474d07401": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+    "ac615334-69f5-4f93-9ec1-7baf7006485e": "8af8ad5e-138c-4471-b670-3d3474d07401",
+    "14c34d7c-644d-4cb8-9df3-d94cefa8fa74": "8af8ad5e-138c-4471-b670-3d3474d07401",
+    "fbc7b495-4e18-4547-a795-9afa2805635a": "8af8ad5e-138c-4471-b670-3d3474d07401",
+    "a44df307-1a67-417b-b733-da109c3be441": "root",
+    "3g8kwwze72yssn0v6zl3lq7": "a44df307-1a67-417b-b733-da109c3be441",
+    "be556b93-fcad-4352-b96a-0089be9e4201": "3g8kwwze72yssn0v6zl3lq7",
+    "7f4a78d9-41c7-4753-8714-d91bc9794897": "a44df307-1a67-417b-b733-da109c3be441",
+    "132fe0fe-fc74-4dbe-982a-9dcac677f664": "root",
+    "013cdd92-74f7-45a0-850a-446b0364efb4": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "c671e95d-c5ee-4567-90af-de3931accfd8": "013cdd92-74f7-45a0-850a-446b0364efb4",
+    "e30182bb-dec6-4f35-b19e-400478c4e0a3": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "58bf3dc7-8c82-4553-afa0-e255f9285e93": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "760405d2-be1b-478f-9002-9ec19f2fcd75": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "90bd478b-7a43-4919-a4df-d0882e332b7e": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "69cc4b72-a98e-4133-8dcc-2b45d2456101": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "efc3885a-03cf-478f-9e3b-89b0c1810d72": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "070c81bd-10c7-4106-b57c-1a2691be1aeb": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "yPSbfSUiv5mdVJHX2LaBF": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "79ff0322-976d-4f93-b5f1-f76fc9e39c75": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "fde0884c-1f69-404e-9906-7f44903cdfb4": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "d0d5e5fb-fd00-4d0f-90a6-dbf3158497de": "fde0884c-1f69-404e-9906-7f44903cdfb4",
+    "691068f4-01bd-4415-80ea-4d24f869962e": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "b8472372-5877-4c9f-9afd-375b56df18fe": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "c435c385-eb67-42a3-815c-a1eccc285296": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "92b8f111-16ee-460f-82f5-8f84c46ffcc0": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "349ad6c9-07ef-4606-860d-37d83bc76467": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "9ee14e63-98a6-4ac0-ba74-e7cea15966d8": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "af877716-9ab3-464e-a575-cde8d8ebbd8c": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+    "ced683be-fe67-4022-989f-abc6d311cb3a": "root",
+    "792ced21-aea6-42c6-ac34-c4e613bbb374": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "502bf670-56f4-41ef-ab3b-5b05703bd407": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "b25f543e-1cbd-45c1-814d-2d245f4a12c5": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "19b67356-8767-4a7e-bb63-9176afa9f1f2": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "e363cde0-76cb-4f3b-91c9-7709ebbbc04f": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "97d883eb-b758-4420-b402-8dada7e105bf": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "25210a99-0d6a-4df6-af95-8ed2835f1063": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "ynvyojd8rxo87nwy7gxj3ea": "ced683be-fe67-4022-989f-abc6d311cb3a",
+    "3bfa34fc-5a50-4d06-928a-30c2ce6afbc1": "ced683be-fe67-4022-989f-abc6d311cb3a"
+  }
+}

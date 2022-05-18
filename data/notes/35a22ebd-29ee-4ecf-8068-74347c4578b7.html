@@ -1,0 +1,26 @@
+<h1 id="puml"><a aria-hidden="true" class="anchor-heading" href="#puml"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Puml</h1>
+<h1 id="plantuml"><a aria-hidden="true" class="anchor-heading" href="#plantuml"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PlantUML</h1>
+<h2 id="component-diagrams"><a aria-hidden="true" class="anchor-heading" href="#component-diagrams"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Component Diagrams</h2>
+<h3 id="shapes"><a aria-hidden="true" class="anchor-heading" href="#shapes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Shapes</h3>
+<pre class="language-puml"><code class="language-puml">@startuml
+component "A" as a
+node "B" as b
+interface "C" as c
+@enduml
+</code></pre>
+<h3 id="styling"><a aria-hidden="true" class="anchor-heading" href="#styling"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Styling</h3>
+<p>Colours for classes</p>
+<pre class="language-sh"><code class="language-sh">component "A" as a &#x3C;&#x3C;push>>
+skinparam component {
+  backgroundColor&#x3C;&#x3C;push>> #95e683
+}
+</code></pre>
+<pre class="language-puml"><code class="language-puml">@startuml
+component "A" as a &#x3C;&#x3C;push>>
+skinparam component {
+  backgroundColor&#x3C;&#x3C;push>> #95e683
+}
+@enduml
+</code></pre>
+<h2 id="formatting"><a aria-hidden="true" class="anchor-heading" href="#formatting"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Formatting</h2>
+<p><a href="https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html">https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html</a></p>

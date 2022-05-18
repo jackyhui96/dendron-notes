@@ -1,0 +1,36 @@
+<h1 id="tar"><a aria-hidden="true" class="anchor-heading" href="#tar"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tar</h1>
+<h1 id="overview"><a aria-hidden="true" class="anchor-heading" href="#overview"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Overview</h1>
+<ul>
+<li>creates and manipulates streaming archive files</li>
+</ul>
+<p><img src="/dendron-notes/assets/2020-07-06-13-40-10.png" alt="tar bomb"></p>
+<h1 id="synopsis"><a aria-hidden="true" class="anchor-heading" href="#synopsis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Synopsis</h1>
+<pre><code>tar [bundle-flags &#x3C;args] [&#x3C;file> | &#x3C;pattern> ...]
+</code></pre>
+<h1 id="options"><a aria-hidden="true" class="anchor-heading" href="#options"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Options</h1>
+<ul>
+<li>-c: create new archive</li>
+<li>-d: find difference bwt files in the archive</li>
+<li>-v: verbose</li>
+<li>-f: specify filename</li>
+<li>-x: extract file</li>
+<li>-j: Open up a bzip2 file</li>
+<li>-z: file archive through gzip</li>
+<li>-C: change directory before adding</li>
+</ul>
+<h1 id="examples"><a aria-hidden="true" class="anchor-heading" href="#examples"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Examples</h1>
+<pre><code>## Create tgz
+tar -czvf archive.tgz source_file
+
+## Create tar.gz 
+tar -cvzf archive.tar.gz source_file
+
+## Open a tar
+tar -xvf yourfile.tar
+
+## Open a bz2 file
+tar -vxjf mm_binary.tar.bz2
+
+## Open a tar.gz
+tar -xvzf archive.tar.gz 
+</code></pre>

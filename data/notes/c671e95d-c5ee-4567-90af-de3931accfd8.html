@@ -1,0 +1,42 @@
+<h1 id="alpine"><a aria-hidden="true" class="anchor-heading" href="#alpine"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Alpine</h1>
+<h1 id="alpine-1"><a aria-hidden="true" class="anchor-heading" href="#alpine-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Alpine</h1>
+<h2 id="setup"><a aria-hidden="true" class="anchor-heading" href="#setup"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Setup</h2>
+<pre class="language-bash"><code class="language-bash"><span class="token comment">## VSCode</span>
+apk update <span class="token operator">&#x26;&#x26;</span> apk <span class="token function">add</span> libstdc++
+
+<span class="token comment">## Bash</span>
+apk update <span class="token operator">&#x26;&#x26;</span> apk upgrade <span class="token operator">&#x26;&#x26;</span> apk <span class="token function">add</span> <span class="token function">bash</span>
+apk <span class="token function">add</span> bash-doc
+apk <span class="token function">add</span> bash-completion
+
+<span class="token comment">## Set Bash as login shell</span>
+<span class="token function">vi</span> /etc/passwd
+
+<span class="token comment">### Docker Desktop setup to WSL2</span>
+<span class="token comment">## Install ca-certificates and wget</span>
+apk <span class="token function">add</span> ca-certificates <span class="token function">wget</span>
+
+<span class="token comment">## Download install package key</span>
+<span class="token function">wget</span> -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
+
+<span class="token comment">## Download package</span>
+<span class="token function">wget</span> https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.32-r0/glibc-2.32-r0.apk
+
+<span class="token comment">## Install package</span>
+apk <span class="token function">add</span> glibc-2.32-r0.apk
+
+<span class="token comment">## Set alpine as default wsl distro (run in powershell)</span>
+wsl --set-default alpine
+
+<span class="token comment">## Install Docker Desktop (https://docs.docker.com/docker-for-windows/wsl/)</span>
+
+<span class="token comment">## Install Docker CLI</span>
+apk <span class="token function">add</span> docker-cli
+
+<span class="token comment">## Install VIM</span>
+apk <span class="token function">add</span> <span class="token function">vim</span>
+
+<span class="token comment">## Dendron PlantUML Setup</span>
+apk <span class="token function">add</span> --no-cache graphviz ttf-droid ttf-droid-nonlatin
+apk <span class="token function">add</span> openjdk11
+</code></pre>

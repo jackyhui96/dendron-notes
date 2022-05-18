@@ -1,0 +1,43 @@
+<h1 id="ssh"><a aria-hidden="true" class="anchor-heading" href="#ssh"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Ssh</h1>
+<h1 id="ssh-1"><a aria-hidden="true" class="anchor-heading" href="#ssh-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>SSH</h1>
+<h2 id="no-host-checking-and-suppress-ssh-messages"><a aria-hidden="true" class="anchor-heading" href="#no-host-checking-and-suppress-ssh-messages"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>No host checking and suppress SSH messages</h2>
+<pre class="language-sh"><code class="language-sh">ssh -qo "StrictHostKeyChecking no" ${TMUXHOST}
+</code></pre>
+<h2 id="copying-ssh-key-to-remote-host"><a aria-hidden="true" class="anchor-heading" href="#copying-ssh-key-to-remote-host"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Copying SSH key to remote-host</h2>
+<pre class="language-sh"><code class="language-sh">ssh-copy-id user@remote-host
+</code></pre>
+<h2 id="copying-ssh-key-to-remote-host-powershell-one-liner"><a aria-hidden="true" class="anchor-heading" href="#copying-ssh-key-to-remote-host-powershell-one-liner"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Copying SSH key to remote-host (Powershell one-liner)</h2>
+<pre class="language-sh"><code class="language-sh">type $env:USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
+</code></pre>
+<h2 id="bad-owner-or-permission-on-cusersusersshconfig-domain_name-not-used"><a aria-hidden="true" class="anchor-heading" href="#bad-owner-or-permission-on-cusersusersshconfig-domain_name-not-used"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Bad owner or permission on c:\Users\user/.ssh/config (domain_name not used)</h2>
+<p>You get this error when you try to ssh in Windows 10 Powershell and the username and device name are the same i.e. jacky is the username, Jacky is name of the computer.
+Fixed this by renaming the computer name.</p>
+<h2 id="generating-ssh-keys"><a aria-hidden="true" class="anchor-heading" href="#generating-ssh-keys"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Generating SSH keys</h2>
+<h3 id="check-for-existing-keys"><a aria-hidden="true" class="anchor-heading" href="#check-for-existing-keys"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Check for existing keys</h3>
+<pre class="language-sh"><code class="language-sh">## List files in .ssh directory
+ls -al ~/.ssh
+
+## Look for filenames such as:
+# - id_rsa.pub
+# - id_ecdsa.pub
+# - id_ed25519.pub
+</code></pre>
+<h3 id="generate-new-ssh-key"><a aria-hidden="true" class="anchor-heading" href="#generate-new-ssh-key"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Generate new SSH key</h3>
+<pre class="language-sh"><code class="language-sh">ssh-keygen -t ed25519 -C "your_email@example.com"
+
+## For legacy systems that can't run the above, use:
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+## Press enter for all prompts, or add a passphrase
+</code></pre>
+<h3 id="add-ssh-key-to-ssh-agent"><a aria-hidden="true" class="anchor-heading" href="#add-ssh-key-to-ssh-agent"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Add SSH key to ssh-agent</h3>
+<pre class="language-sh"><code class="language-sh">eval `ssh-agent -s`
+
+## replaced filename with your private keyfile
+ssh-add ~/.ssh/id_ed25519
+</code></pre>
+<h3 id="add-ssh-key-to-github"><a aria-hidden="true" class="anchor-heading" href="#add-ssh-key-to-github"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Add SSH key to GitHub</h3>
+<p>Copy contents of public file e.g. <code>~/.ssh/id_ed25519.pub</code>
+Go to settings of GitHub and add new ssh key and paste contents.
+SSH key looks like the following:
+<code>ssh-ed25519 &#x3C;HASH> &#x3C;EMAIL_ADDRESS></code></p>

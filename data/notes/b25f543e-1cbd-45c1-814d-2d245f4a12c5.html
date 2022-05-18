@@ -1,0 +1,29 @@
+<h1 id="portainer"><a aria-hidden="true" class="anchor-heading" href="#portainer"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Portainer</h1>
+<h1 id="portainer-1"><a aria-hidden="true" class="anchor-heading" href="#portainer-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Portainer</h1>
+<h2 id="runing-in-docker"><a aria-hidden="true" class="anchor-heading" href="#runing-in-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Runing in Docker</h2>
+<pre class="language-sh"><code class="language-sh">## Create a volume
+docker volume create portainer_data
+
+## Install and run in portainer
+docker run -d \
+-p 8000:8000 \
+-p 9000:9000 \
+--name=portainer \
+--restart=always \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v portainer_data:/data \
+portainer/portainer
+
+## Install and run portainer agent (can then use portainer to connect to the agent)
+docker run -d \
+-p 9001:9001 \
+--name portainer_agent \
+--restart=always \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v portainer_agent_data:/var/lib/docker/volumes \
+portainer/agent:latest
+
+## Now that your new Portainer container is up and running, you can access it at http://dockerhostip:9000.
+
+
+</code></pre>

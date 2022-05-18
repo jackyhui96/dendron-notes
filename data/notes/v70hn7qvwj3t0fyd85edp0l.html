@@ -1,0 +1,13 @@
+<h1 id="grocy"><a aria-hidden="true" class="anchor-heading" href="#grocy"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Grocy</h1>
+<h1 id="grocy-1"><a aria-hidden="true" class="anchor-heading" href="#grocy-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Grocy</h1>
+<pre class="language-sh"><code class="language-sh">docker run -d \
+  --name=grocy \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Europe/London \
+  -p 9283:80 \
+  -v /usr/local/docker_apps/grocy/config:/config \
+  --restart unless-stopped \
+  lscr.io/linuxserver/grocy:arm32v7-latest
+</code></pre>
+<p>Fixed libseccomp following <a href="https://docs.linuxserver.io/faq#libseccomp">https://docs.linuxserver.io/faq#libseccomp</a></p>

@@ -1,0 +1,64 @@
+<h1 id="pihole"><a aria-hidden="true" class="anchor-heading" href="#pihole"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Pihole</h1>
+<h1 id="pihole-1"><a aria-hidden="true" class="anchor-heading" href="#pihole-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PiHole</h1>
+<h2 id="running-in-docker"><a aria-hidden="true" class="anchor-heading" href="#running-in-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Running in Docker</h2>
+<pre class="language-sh"><code class="language-sh">## Create persistent volumes
+docker volume create pihole
+docker volume create dnsmasq
+
+## Pull the armv7 build (https://hub.docker.com/layers/pihole/pihole/latest/images/sha256-6f8e902adb26cf10220763d1ab027b0b2c64e2df3a397e4f015ead7a1c40d96c?context=explore) - doing this as --platform linux/arm/v7 could not find image, despite it being on DockerHub
+docker pull pihole/pihole@sha256:6f8e902adb26cf10220763d1ab027b0b2c64e2df3a397e4f015ead7a1c40d96c
+
+## Docker tag 
+docker tag 1b529812cd4b pihole/pihole:armv7
+
+## Run pihole
+docker run -d \
+--name=pihole \
+-e TZ=Europe/London \
+-e WEBPASSWORD=YOURPASS \
+-e ServerIP=YOUR.SERVER.IP \
+-v pihole:/etc/pihole \
+-v dnsmasq:/etc/dnsmasq.d \
+-p 80:80 \
+-p 192.168.208.102:53:53/tcp \
+-p 192.168.208.102:53:53/udp \
+--restart=unless-stopped \
+pihole/pihole:armv7
+
+## e.g.
+
+docker run -d \
+--name=pihole \
+-e TZ=Europe/London \
+-e WEBPASSWORD=change_this_password \
+-e ServerIP=192.168.208.102 \
+-v pihole:/etc/pihole \
+-v dnsmasq:/etc/dnsmasq.d \
+-p 80:80 \
+-p 192.168.208.102:53:53/tcp \
+-p 192.168.208.102:53:53/udp \
+--restart=unless-stopped \
+pihole/pihole:armv7
+</code></pre>
+<h2 id="solve-dns-resolution-in-other-containers-when-using-pihole-in-docker"><a aria-hidden="true" class="anchor-heading" href="#solve-dns-resolution-in-other-containers-when-using-pihole-in-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Solve DNS resolution in other containers when using PiHole in Docker</h2>
+<p>Found that when using wireguard in docker on the the same docker host as pihole.
+wireguard could not correctly use pihole.
+This is solved in the the following link:
+<em><a href="https://discourse.pi-hole.net/t/solve-dns-resolution-in-other-containers-when-using-docker-pihole/31413/2">https://discourse.pi-hole.net/t/solve-dns-resolution-in-other-containers-when-using-docker-pihole/31413/2</a></em></p>
+<h2 id="adding-custom-dns-entries"><a aria-hidden="true" class="anchor-heading" href="#adding-custom-dns-entries"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Adding custom DNS entries</h2>
+<p>Write a file ending in <code>.conf</code> in the dnsmasq folder - defautls to <code>/etc/dnsmasq.d</code>
+The file should have the following syntax:</p>
+<pre class="language-sh"><code class="language-sh">host-record=mydomain.duckdns.org,192.168.1.10
+address=/printer.lan/192.168.2.9
+</code></pre>
+<p>After making changes, run th follwing to restart the pihole dns
+<code>pihole restartdns</code></p>
+<h2 id="whitelist-the-following-on-this-url"><a aria-hidden="true" class="anchor-heading" href="#whitelist-the-following-on-this-url"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Whitelist the following on this URL</h2>
+<p><em><a href="https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212">https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212</a></em></p>
+<h2 id="blacklist-the-following-optional"><a aria-hidden="true" class="anchor-heading" href="#blacklist-the-following-optional"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Blacklist the following (optional)</h2>
+<p>Based on <code>/u/AtariDump</code> reddit comment <a href="https://www.reddit.com/r/pihole/comments/jtr6eb/default_adlists/">https://www.reddit.com/r/pihole/comments/jtr6eb/default_adlists/</a>
+<code>/u/Wally3K</code> <a href="https://firebog.net/">https://firebog.net/</a>
+<code>/u/LightSwitch05</code> <a href="https://www.github.developerdan.com/hosts/">https://www.github.developerdan.com/hosts/</a>
+Regex list: <a href="https://github.com/mmotti/pihole-regex/blob/master/regex.list">https://github.com/mmotti/pihole-regex/blob/master/regex.list</a></p>
+<h2 id="seeing-lots-of-queries-for-lb_dns-sd_udpip_addressin-addrarpa"><a aria-hidden="true" class="anchor-heading" href="#seeing-lots-of-queries-for-lb_dns-sd_udpip_addressin-addrarpa"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Seeing lots of queries for lb._dns-sd._udp.&#x3C;IP_ADDRESS>.in-addr.arpa</h2>
+<p><em><a href="https://github.com/pi-hole/pi-hole/issues/2654">https://github.com/pi-hole/pi-hole/issues/2654</a></em></p>

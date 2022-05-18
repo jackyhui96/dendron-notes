@@ -1,0 +1,318 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><title>Erlang</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Personal knowledge space"/><meta property="og:title" content="Erlang"/><meta property="og:description" content="Personal knowledge space"/><meta property="og:url" content="https://jackyhui96.github.io/dendron-notes/notes/8af8ad5e-138c-4471-b670-3d3474d07401/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="10/9/2020"/><meta property="article:modified_time" content="7/5/2021"/><link rel="canonical" href="https://jackyhui96.github.io/dendron-notes/notes/8af8ad5e-138c-4471-b670-3d3474d07401/"/><meta name="next-head-count" content="14"/><link rel="preload" href="/dendron-notes/_next/static/css/311cdff2e267b2b9.css" as="style"/><link rel="stylesheet" href="/dendron-notes/_next/static/css/311cdff2e267b2b9.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/dendron-notes/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/dendron-notes/_next/static/chunks/webpack-c34b18ce8e2d9d8e.js" defer=""></script><script src="/dendron-notes/_next/static/chunks/framework-bb5c596eafb42b22.js" defer=""></script><script src="/dendron-notes/_next/static/chunks/main-e23e59a6994e534a.js" defer=""></script><script src="/dendron-notes/_next/static/chunks/pages/_app-0346e2e0ce770356.js" defer=""></script><script src="/dendron-notes/_next/static/chunks/155-3a6c02d7e042edb7.js" defer=""></script><script src="/dendron-notes/_next/static/chunks/pages/notes/%5Bid%5D-dc9b1cbe134a7143.js" defer=""></script><script src="/dendron-notes/_next/static/n99zhAM-gKPmAIazFHerv/_buildManifest.js" defer=""></script><script src="/dendron-notes/_next/static/n99zhAM-gKPmAIazFHerv/_ssgManifest.js" defer=""></script><script src="/dendron-notes/_next/static/n99zhAM-gKPmAIazFHerv/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div style="display:flex" class="ant-col ant-col-xs-20 ant-col-sm-4"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"><div class="ant-select ant-select-lg ant-select-auto-complete ant-select-single ant-select-allow-clear ant-select-show-search" style="width:100%"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" autoComplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="undefined_list" aria-autocomplete="list" aria-controls="undefined_list" aria-activedescendant="undefined_list_0" value=""/></span><span class="ant-select-selection-placeholder">For full text search please use the &#x27;?&#x27; prefix. e.g. ? Onboarding</span></div></div></div><div style="display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout site-layout" style="margin-top:64px"><section class="ant-layout site-layout" style="flex-direction:row"><section class="ant-layout site-layout-sidebar" style="flex:0 0 auto;width:calc(max((100% - 992px) / 2, 0px) + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></section><section class="ant-layout side-layout-main" style="max-width:1200px;display:initial"><main class="ant-layout-content main-content" role="main" style="padding:0 24px"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-18"><div><h1 id="erlang"><a aria-hidden="true" class="anchor-heading" href="#erlang"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Erlang</h1>
+<h1 id="erlang-1"><a aria-hidden="true" class="anchor-heading" href="#erlang-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Erlang</h1>
+<h2 id="tail-recursive-efficiency"><a aria-hidden="true" class="anchor-heading" href="#tail-recursive-efficiency"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>tail recursive efficiency</h2>
+<ul>
+<li>Use foldr for simple building of lists (even if it needs reversing)</li>
+<li>simple building of lists i.e. size N input, size N output</li>
+<li>summary of references
+<ul>
+<li>foldr is generally faster as it avoids lists:reverse and uses the heap space it creates for all processing</li>
+<li>foldl will be slower, if it needs a lists:reverse as we duplicate the memory allocation for the new list then use processing to garbage collect original list.</li>
+<li>foldl will always be faster if a lists:reverse is not needed i.e. we don't care about order </li>
+</ul>
+</li>
+</ul>
+<p><em>References</em>
+<a href="http://erlang.2086793.n4.nabble.com/Efficiency-of-a-list-construction-td3538122.html#a3538379">http://erlang.2086793.n4.nabble.com/Efficiency-of-a-list-construction-td3538122.html#a3538379</a>
+<a href="https://ferd.ca/erlang-s-tail-recursion-is-not-a-silver-bullet.html">https://ferd.ca/erlang-s-tail-recursion-is-not-a-silver-bullet.html</a></p>
+<h2 id="implementation-of-erlang-maps"><a aria-hidden="true" class="anchor-heading" href="#implementation-of-erlang-maps"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Implementation of Erlang Maps</h2>
+<ul>
+<li><a href="https://medium.com/@jlouis666/breaking-erlang-maps-1-31952b8729e6">https://medium.com/@jlouis666/breaking-erlang-maps-1-31952b8729e6</a></li>
+<li>uses sorted array <a href="http://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/Map/ordered-map.html">http://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/Map/ordered-map.html</a></li>
+</ul>
+<h2 id="advanced-stuff-about-list-sizes-and-sharing"><a aria-hidden="true" class="anchor-heading" href="#advanced-stuff-about-list-sizes-and-sharing"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Advanced stuff about list sizes and sharing</h2>
+<p><em>Reference: <a href="http://erlang.org/doc/efficiency_guide/processes.html">http://erlang.org/doc/efficiency_guide/processes.html</a></em></p>
+<h2 id="gb-tree-stuff"><a aria-hidden="true" class="anchor-heading" href="#gb-tree-stuff"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>GB Tree stuff</h2>
+<p><em>Reference: <a href="http://erlang.2086793.n4.nabble.com/gb-trees-and-dict-performance-td4715001.html">http://erlang.2086793.n4.nabble.com/gb-trees-and-dict-performance-td4715001.html</a></em></p>
+<h2 id="when-to-use-ok-tuple"><a aria-hidden="true" class="anchor-heading" href="#when-to-use-ok-tuple"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>When to use ok tuple</h2>
+<pre class="language-erlang"><code class="language-erlang"><span class="token operator">-</span><span class="token atom">spec</span> <span class="token punctuation">{</span><span class="token atom">ok</span><span class="token punctuation">,</span> <span class="token atom">some_value</span><span class="token punctuation">}</span> <span class="token punctuation">|</span><span class="token punctuation">|</span> <span class="token punctuation">{</span><span class="token atom">error</span><span class="token punctuation">,</span> <span class="token atom">reason</span><span class="token punctuation">}</span>
+</code></pre>
+<p><em>Reference: <a href="https://medium.com/@bruno_sapienza/when-to-return-the-ok-in-elixir-10c3c336870#:~:text=it&#x27;s%20common%20to%20return%20tagged,related%20value(s)%20like%20the">https://medium.com/@bruno_sapienza/when-to-return-the-ok-in-elixir-10c3c336870#:~:text=it's%20common%20to%20return%20tagged,related%20value(s)%20like%20the</a></em></p>
+<h2 id="data-comparisons"><a aria-hidden="true" class="anchor-heading" href="#data-comparisons"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Data Comparisons</h2>
+<p><a href="https://www.theerlangelist.com/article/sequences">https://www.theerlangelist.com/article/sequences</a></p>
+<h2 id="try-catch-vs-catch"><a aria-hidden="true" class="anchor-heading" href="#try-catch-vs-catch"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>try catch vs catch</h2>
+<p>catch will always generate a stacktrace when catching an exception, so it slower, than try.
+try avoids building a stacktrace if you don't ask for it
+<a href="https://www.programmersought.com/article/91291342145/">https://www.programmersought.com/article/91291342145/</a></p>
+<h2 id="good-resources"><a aria-hidden="true" class="anchor-heading" href="#good-resources"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Good resources</h2>
+<p><a href="https://adoptingerlang.org/docs/cheat_sheets/">https://adoptingerlang.org/docs/cheat_sheets/</a>
+<a href="http://beam-wisdoms.clau.se/en/latest/">http://beam-wisdoms.clau.se/en/latest/</a></p>
+<h2 id="ets-scalability"><a aria-hidden="true" class="anchor-heading" href="#ets-scalability"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>ETS Scalability</h2>
+<p><a href="https://www.researchgate.net/publication/262172496_On_the_scalability_of_the_Erlang_term_storage">https://www.researchgate.net/publication/262172496_On_the_scalability_of_the_Erlang_term_storage</a>
+<a href="http://blog.erlang.org/the-new-scalable-ets-ordered_set/#benchmark">http://blog.erlang.org/the-new-scalable-ets-ordered_set/#benchmark</a></p>
+<h2 id="behaviours"><a aria-hidden="true" class="anchor-heading" href="#behaviours"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Behaviours</h2>
+<p>Not all OTP behaviours are listed here, only thee most frequently-used ones.</p>
+<h3 id="applications"><a aria-hidden="true" class="anchor-heading" href="#applications"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Applications</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Trigger</th><th>Called By</th><th>Handled By</th><th>Return</th><th>Description</th></tr></thead><tbody><tr><td><code>application:start/1-2</code></td><td>client or booting VM</td><td><code>start(Type, Args)</code></td><td><code>{ok, pid()} &#x26;#124; {ok, pid(), State}</code></td><td>should start the root supervisor</td></tr><tr><td><code>{start_phases, [{Phase, Args}]}</code> in app file</td><td>kernel booting the app</td><td><code>start_phase(Phase, Type, Args)</code></td><td><code>ok &#x26;#124; {error, Reason}</code></td><td>Optional. Can isolate specific steps of initialization</td></tr><tr><td><code>application:stop/1</code></td><td>app shutting down</td><td><code>prop_stop(State)</code></td><td><code>State</code></td><td>Optional. Called before the supervision tree is shut down</td></tr><tr><td><code>application:stop/1</code></td><td>app shutting down</td><td><code>stop(State)</code></td><td><code>term()</code></td><td>called once the app is done running to clean things up</td></tr><tr><td>Hot code update</td><td>SASL’s release handler</td><td><code>config_change(Changed::[{K,V}], New::[{K,V}], Removed::[K])</code></td><td><code>ok</code></td><td>Called after a hot code update using the VM’s relup functionality, if the configuration values changed</td></tr></tbody></table>
+<h3 id="supervisors"><a aria-hidden="true" class="anchor-heading" href="#supervisors"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Supervisors</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Trigger</th><th>Called By</th><th>Handled By</th><th>Return</th><th>Description</th></tr></thead><tbody><tr><td><code>supervisor:start_link/2-3</code></td><td>parent process</td><td><code>init(Arg)</code></td><td><code>ignore &#x26;#124; {ok, {SupFlag, [Child]}}</code></td><td>Specifies a supervisor. Refer to official documentation</td></tr></tbody></table>
+<h3 id="gen_server"><a aria-hidden="true" class="anchor-heading" href="#gen_server"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>gen_server</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Trigger</th><th>Called By</th><th>Handled By</th><th>Return</th><th>Description</th></tr></thead><tbody><tr><td><code>gen_server:start_link/3-4</code></td><td>supervisor</td><td><code>init(Arg)</code></td><td><code>{ok, State [, Option]} &#x26;#124; ignore &#x26;#124; {stop, Reason}</code></td><td>Set up the initial state of the process</td></tr><tr><td><code>gen_server:call/2-3</code></td><td>client</td><td><code>handle_call(Msg, From, State)</code></td><td><code>{Type::reply &#x26;#124; noreply, State [, Option]} &#x26;#124; {stop, Reason [, Reply], State}</code></td><td>Request/response pattern. A message is received and expects an answer</td></tr><tr><td><code>gen_server:cast/2</code></td><td>client</td><td><code>handle_cast(Msg, State)</code></td><td><code>{noreply, State [, Option]} &#x26;#124; {stop, Reason, State}</code></td><td>Information sent to the process; fire and forget</td></tr><tr><td><code>Pid ! Msg</code></td><td>client</td><td><code>handle_info(Msg, State)</code></td><td>same as <code>handle_cast/2</code></td><td>Out-of-band messages, including monitor signals and <code>'EXIT'</code> messages when trappig exit</td></tr><tr><td>Setting an Option value to <code>{continue, Val}</code></td><td>the server itself</td><td><code>handle_continue(Val, State)</code></td><td>same as <code>handle_cast/2</code></td><td>Used to break longer operations into triggerable internal events</td></tr><tr><td><code>gen_server:stop/1,3</code></td><td>client or supervisor</td><td><code>terminate(Reason, State)</code></td><td><code>term()</code></td><td>Called when the process is shutting down willingly or through errors. If the process does not trap exits, this callback may be omitted</td></tr><tr><td><code>sys:get_status/2-3</code>, crash logs</td><td>client, the server itself</td><td><code>format_status(normal &#x26;#124; terminate, [PDict, State])</code></td><td><code>[{data, [{"State", Term}]}]</code></td><td>Used to add or remove information that would make it to debugging calls or error logs</td></tr><tr><td>N/A</td><td>supervisor</td><td><code>code_change(OldVsn, State, Extra)</code></td><td><code>{ok, NewState}</code></td><td>called to update a stateful process if the proper instructions are given during a hot code upgrade with releases</td></tr></tbody></table>
+<h3 id="gen_statem"><a aria-hidden="true" class="anchor-heading" href="#gen_statem"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>gen_statem</h3>
+<h4 id="process-management"><a aria-hidden="true" class="anchor-heading" href="#process-management"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Process management</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Trigger</th><th>Called By</th><th>Handled By</th><th>Return</th><th>Description</th></tr></thead><tbody><tr><td><code>gen_statem:start_link/3-4</code></td><td>supervisor</td><td><code>init(Arg)</code></td><td><code>{ok, State, Data [, Actions]} &#x26;#124; ignore &#x26;#124; {stop, Reason}</code></td><td>Sets the initial state and data for the state machine</td></tr><tr><td>N/A</td><td>internal</td><td><code>callback_mode()</code></td><td><code>[state_functions &#x26;#124; handle_event_function [, state_enter]]</code></td><td>Defines the type of FSM and whether entering a state triggers a special internal event</td></tr><tr><td><code>gen_statem:stop/1,3</code></td><td>client or supervisor</td><td><code>terminate(Reason, State, Data)</code></td><td><code>term()</code></td><td>Called when the process is shutting down willingly or through errors. If the process does not trap exits, this callback may be omitted</td></tr><tr><td><code>sys:get_status/2-3</code>, crash logs</td><td>client, the server itself</td><td><code>format_status(normal &#x26;#124; terminate, [PDict, State, Data])</code></td><td><code>[{data, [{"State", Term}]}]</code></td><td>Used to add or remove information that would make it to debugging calls or error logs</td></tr><tr><td>N/A</td><td>supervisor</td><td><code>code_change(OldVsn, State, Data, Extra)</code></td><td><code>{ok, NewState, NewData}</code></td><td>called to update a stateful process if the proper instructions are given during a hot code upgrade with releases</td></tr></tbody></table>
+<h4 id="state-handling-and-transitions"><a aria-hidden="true" class="anchor-heading" href="#state-handling-and-transitions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>State handling and transitions</h4>
+<p>Handled by either <code>handle_event/4</code> or <code>StateName/3</code> functions, based on the value of <code>callback_mode()</code>.
+The function signatures are either:</p>
+<ul>
+<li><code>handle_event(EventType, EventDetails, State, Data)</code></li>
+<li><code>State(EventType, EventDetails, Data)</code></li>
+</ul>
+<p>If the value of <code>State</code> is not a list, even though <code>callback_mode()</code> defined <code>state_functions</code>, then <code>handle_event/4</code> will be called. All possible return values for either functions are one of:</p>
+<ul>
+<li><code>{next_state, State, Data}</code></li>
+<li><code>{next_state, State, Data, [Actions, ...]}</code></li>
+<li><code>{stop, Reason, Data}</code></li>
+<li><code>{stop, Reason, Data, [Actions, ...]}</code></li>
+</ul>
+<p>Various short forms exist, such as <code>keep_state_and_data</code>, <code>{keep_state, Data}</code>, <code>{repeat_state, Data}</code>, and many more. Refer to the documentation for their content.</p>
+<p>The <code>Actions</code> value is any combination of the following list (non-inclusive): <code>postpone</code>, <code>{next_event, EventType, EventDetails}</code>, <code>hibernate</code>, <code>{timeout, Delay, EventDetails}</code>, <code>{state_timeout, Delay, EventDetails}</code>, <code>{reply, From, Reply}</code>. Consult the documentation for more options.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Trigger</th><th>Called By</th><th>Event Type</th><th>Event Details</th><th>Description</th></tr></thead><tbody><tr><td><code>gen_statem:call/2-3</code></td><td>client</td><td><code>{call, From}</code></td><td><code>term()</code></td><td>Request/response pattern. A message is received and is expected to receive an answer</td></tr><tr><td><code>gen_statem:cast/2</code></td><td>client</td><td><code>cast</code></td><td><code>term()</code></td><td>Information must be sent to the process; fire and forget</td></tr><tr><td><code>Pid ! Msg</code></td><td>client</td><td><code>info</code></td><td><code>Msg</code></td><td>Out-of-band messages, including monitor messages and 'EXIT' signals that are trapped</td></tr><tr><td><code>{timeout, T, Msg}</code></td><td><code>Action</code> return value</td><td><code>timeout</code></td><td><code>Msg</code></td><td>A specific timeout that can be set and received internally when the state machine has not received a new event in <code>T</code> milliseconds</td></tr><tr><td><code>{state_timeout, T, Msg}</code></td><td><code>Action</code> return value</td><td><code>state_timeout</code></td><td><code>Msg</code></td><td>A specific timeout that can be set and received internally when the state machine has not transitioned to a new different state in T milliseconds</td></tr><tr><td><code>{next_event, internal, Msg}</code></td><td><code>Action</code> return value</td><td><code>internal</code></td><td><code>Msg</code></td><td>Internal messages that can be generated by a state machine wanting to trigger itself without looking like external calls</td></tr></tbody></table>
+<h2 id="interpreting-erl_crash-dump"><a aria-hidden="true" class="anchor-heading" href="#interpreting-erl_crash-dump"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Interpreting erl_crash dump</h2>
+<p><em>Reference: <a href="http://erlang.org/doc/apps/erts/crash_dump.html">http://erlang.org/doc/apps/erts/crash_dump.html</a></em></p>
+<h2 id="docker-erlang-stuff"><a aria-hidden="true" class="anchor-heading" href="#docker-erlang-stuff"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Docker erlang stuff</h2>
+<h3 id="run-erlang-using-docker-container"><a aria-hidden="true" class="anchor-heading" href="#run-erlang-using-docker-container"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>run erlang using docker container</h3>
+<pre class="language-sh"><code class="language-sh">docker run -it --rm --name erlang-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp erlang:23-alpine erl
+</code></pre>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/dendron-notes/notes/fbc7b495-4e18-4547-a795-9afa2805635a">Data</a></li>
+<li><a href="/dendron-notes/notes/14c34d7c-644d-4cb8-9df3-d94cefa8fa74">Syntax</a></li>
+<li><a href="/dendron-notes/notes/ac615334-69f5-4f93-9ec1-7baf7006485e">Test</a></li>
+</ol></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-6"><div><div class=""><div class="ant-anchor-wrapper dendron-toc" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#erlang" title="Erlang">Erlang</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#tail-recursive-efficiency" title="tail recursive efficiency">tail recursive efficiency</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#implementation-of-erlang-maps" title="Implementation of Erlang Maps">Implementation of Erlang Maps</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#advanced-stuff-about-list-sizes-and-sharing" title="Advanced stuff about list sizes and sharing">Advanced stuff about list sizes and sharing</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#gb-tree-stuff" title="GB Tree stuff">GB Tree stuff</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#when-to-use-ok-tuple" title="When to use ok tuple">When to use ok tuple</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#data-comparisons" title="Data Comparisons">Data Comparisons</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#try-catch-vs-catch" title="try catch vs catch">try catch vs catch</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#good-resources" title="Good resources">Good resources</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#ets-scalability" title="ETS Scalability">ETS Scalability</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#behaviours" title="Behaviours">Behaviours</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#applications" title="Applications">Applications</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#supervisors" title="Supervisors">Supervisors</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#gen_server" title="gen_server">gen_server</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#gen_statem" title="gen_statem">gen_statem</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#process-management" title="Process management">Process management</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#state-handling-and-transitions" title="State handling and transitions">State handling and transitions</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#interpreting-erl_crash-dump" title="Interpreting erl_crash dump">Interpreting erl_crash dump</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#docker-erlang-stuff" title="Docker erlang stuff">Docker erlang stuff</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#run-erlang-using-docker-container" title="run erlang using docker container">run erlang using docker container</a></div></div></div></div></div></div></div></div></div></main><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></section></section></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"8af8ad5e-138c-4471-b670-3d3474d07401","title":"Erlang","desc":"","updated":1625481523541,"created":1602246697398,"custom":{},"fname":"lang.erlang","type":"note","vault":{"fsPath":".","name":"vault","selfContained":true},"contentHash":"cd002081e72e7708926e7f90de88c841","links":[],"anchors":{"erlang":{"type":"header","text":"Erlang","value":"erlang","line":8,"column":0,"depth":1},"tail-recursive-efficiency":{"type":"header","text":"tail recursive efficiency","value":"tail-recursive-efficiency","line":10,"column":0,"depth":2},"implementation-of-erlang-maps":{"type":"header","text":"Implementation of Erlang Maps","value":"implementation-of-erlang-maps","line":22,"column":0,"depth":2},"advanced-stuff-about-list-sizes-and-sharing":{"type":"header","text":"Advanced stuff about list sizes and sharing","value":"advanced-stuff-about-list-sizes-and-sharing","line":26,"column":0,"depth":2},"gb-tree-stuff":{"type":"header","text":"GB Tree stuff","value":"gb-tree-stuff","line":29,"column":0,"depth":2},"when-to-use-ok-tuple":{"type":"header","text":"When to use ok tuple","value":"when-to-use-ok-tuple","line":32,"column":0,"depth":2},"data-comparisons":{"type":"header","text":"Data Comparisons","value":"data-comparisons","line":38,"column":0,"depth":2},"try-catch-vs-catch":{"type":"header","text":"try catch vs catch","value":"try-catch-vs-catch","line":41,"column":0,"depth":2},"good-resources":{"type":"header","text":"Good resources","value":"good-resources","line":46,"column":0,"depth":2},"ets-scalability":{"type":"header","text":"ETS Scalability","value":"ets-scalability","line":50,"column":0,"depth":2},"behaviours":{"type":"header","text":"Behaviours","value":"behaviours","line":54,"column":0,"depth":2},"applications":{"type":"header","text":"Applications","value":"applications","line":57,"column":0,"depth":3},"supervisors":{"type":"header","text":"Supervisors","value":"supervisors","line":66,"column":0,"depth":3},"gen_server":{"type":"header","text":"gen_server","value":"gen_server","line":71,"column":0,"depth":3},"gen_statem":{"type":"header","text":"gen_statem","value":"gen_statem","line":82,"column":0,"depth":3},"process-management":{"type":"header","text":"Process management","value":"process-management","line":83,"column":0,"depth":4},"state-handling-and-transitions":{"type":"header","text":"State handling and transitions","value":"state-handling-and-transitions","line":92,"column":0,"depth":4},"interpreting-erl_crash-dump":{"type":"header","text":"Interpreting erl_crash dump","value":"interpreting-erl_crash-dump","line":117,"column":0,"depth":2},"docker-erlang-stuff":{"type":"header","text":"Docker erlang stuff","value":"docker-erlang-stuff","line":120,"column":0,"depth":2},"run-erlang-using-docker-container":{"type":"header","text":"run erlang using docker container","value":"run-erlang-using-docker-container","line":122,"column":0,"depth":3}},"children":["fbc7b495-4e18-4547-a795-9afa2805635a","14c34d7c-644d-4cb8-9df3-d94cefa8fa74","ac615334-69f5-4f93-9ec1-7baf7006485e"],"parent":"b9686e84-d9a1-4dbb-8474-1a9c156d6d12","data":{}},"body":"\u003ch1 id=\"erlang\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#erlang\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eErlang\u003c/h1\u003e\n\u003ch1 id=\"erlang-1\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#erlang-1\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eErlang\u003c/h1\u003e\n\u003ch2 id=\"tail-recursive-efficiency\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#tail-recursive-efficiency\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003etail recursive efficiency\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eUse foldr for simple building of lists (even if it needs reversing)\u003c/li\u003e\n\u003cli\u003esimple building of lists i.e. size N input, size N output\u003c/li\u003e\n\u003cli\u003esummary of references\n\u003cul\u003e\n\u003cli\u003efoldr is generally faster as it avoids lists:reverse and uses the heap space it creates for all processing\u003c/li\u003e\n\u003cli\u003efoldl will be slower, if it needs a lists:reverse as we duplicate the memory allocation for the new list then use processing to garbage collect original list.\u003c/li\u003e\n\u003cli\u003efoldl will always be faster if a lists:reverse is not needed i.e. we don't care about order \u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cem\u003eReferences\u003c/em\u003e\n\u003ca href=\"http://erlang.2086793.n4.nabble.com/Efficiency-of-a-list-construction-td3538122.html#a3538379\"\u003ehttp://erlang.2086793.n4.nabble.com/Efficiency-of-a-list-construction-td3538122.html#a3538379\u003c/a\u003e\n\u003ca href=\"https://ferd.ca/erlang-s-tail-recursion-is-not-a-silver-bullet.html\"\u003ehttps://ferd.ca/erlang-s-tail-recursion-is-not-a-silver-bullet.html\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"implementation-of-erlang-maps\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#implementation-of-erlang-maps\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eImplementation of Erlang Maps\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://medium.com/@jlouis666/breaking-erlang-maps-1-31952b8729e6\"\u003ehttps://medium.com/@jlouis666/breaking-erlang-maps-1-31952b8729e6\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003euses sorted array \u003ca href=\"http://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/Map/ordered-map.html\"\u003ehttp://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/Map/ordered-map.html\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"advanced-stuff-about-list-sizes-and-sharing\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#advanced-stuff-about-list-sizes-and-sharing\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eAdvanced stuff about list sizes and sharing\u003c/h2\u003e\n\u003cp\u003e\u003cem\u003eReference: \u003ca href=\"http://erlang.org/doc/efficiency_guide/processes.html\"\u003ehttp://erlang.org/doc/efficiency_guide/processes.html\u003c/a\u003e\u003c/em\u003e\u003c/p\u003e\n\u003ch2 id=\"gb-tree-stuff\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#gb-tree-stuff\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eGB Tree stuff\u003c/h2\u003e\n\u003cp\u003e\u003cem\u003eReference: \u003ca href=\"http://erlang.2086793.n4.nabble.com/gb-trees-and-dict-performance-td4715001.html\"\u003ehttp://erlang.2086793.n4.nabble.com/gb-trees-and-dict-performance-td4715001.html\u003c/a\u003e\u003c/em\u003e\u003c/p\u003e\n\u003ch2 id=\"when-to-use-ok-tuple\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#when-to-use-ok-tuple\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eWhen to use ok tuple\u003c/h2\u003e\n\u003cpre class=\"language-erlang\"\u003e\u003ccode class=\"language-erlang\"\u003e\u003cspan class=\"token operator\"\u003e-\u003c/span\u003e\u003cspan class=\"token atom\"\u003espec\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\u003cspan class=\"token atom\"\u003eok\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e \u003cspan class=\"token atom\"\u003esome_value\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e|\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e|\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\u003cspan class=\"token atom\"\u003eerror\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e \u003cspan class=\"token atom\"\u003ereason\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cem\u003eReference: \u003ca href=\"https://medium.com/@bruno_sapienza/when-to-return-the-ok-in-elixir-10c3c336870#:~:text=it\u0026#x27;s%20common%20to%20return%20tagged,related%20value(s)%20like%20the\"\u003ehttps://medium.com/@bruno_sapienza/when-to-return-the-ok-in-elixir-10c3c336870#:~:text=it's%20common%20to%20return%20tagged,related%20value(s)%20like%20the\u003c/a\u003e\u003c/em\u003e\u003c/p\u003e\n\u003ch2 id=\"data-comparisons\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#data-comparisons\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eData Comparisons\u003c/h2\u003e\n\u003cp\u003e\u003ca href=\"https://www.theerlangelist.com/article/sequences\"\u003ehttps://www.theerlangelist.com/article/sequences\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"try-catch-vs-catch\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#try-catch-vs-catch\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003etry catch vs catch\u003c/h2\u003e\n\u003cp\u003ecatch will always generate a stacktrace when catching an exception, so it slower, than try.\ntry avoids building a stacktrace if you don't ask for it\n\u003ca href=\"https://www.programmersought.com/article/91291342145/\"\u003ehttps://www.programmersought.com/article/91291342145/\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"good-resources\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#good-resources\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eGood resources\u003c/h2\u003e\n\u003cp\u003e\u003ca href=\"https://adoptingerlang.org/docs/cheat_sheets/\"\u003ehttps://adoptingerlang.org/docs/cheat_sheets/\u003c/a\u003e\n\u003ca href=\"http://beam-wisdoms.clau.se/en/latest/\"\u003ehttp://beam-wisdoms.clau.se/en/latest/\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"ets-scalability\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#ets-scalability\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eETS Scalability\u003c/h2\u003e\n\u003cp\u003e\u003ca href=\"https://www.researchgate.net/publication/262172496_On_the_scalability_of_the_Erlang_term_storage\"\u003ehttps://www.researchgate.net/publication/262172496_On_the_scalability_of_the_Erlang_term_storage\u003c/a\u003e\n\u003ca href=\"http://blog.erlang.org/the-new-scalable-ets-ordered_set/#benchmark\"\u003ehttp://blog.erlang.org/the-new-scalable-ets-ordered_set/#benchmark\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"behaviours\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#behaviours\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eBehaviours\u003c/h2\u003e\n\u003cp\u003eNot all OTP behaviours are listed here, only thee most frequently-used ones.\u003c/p\u003e\n\u003ch3 id=\"applications\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#applications\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eApplications\u003c/h3\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eTrigger\u003c/th\u003e\u003cth\u003eCalled By\u003c/th\u003e\u003cth\u003eHandled By\u003c/th\u003e\u003cth\u003eReturn\u003c/th\u003e\u003cth\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eapplication:start/1-2\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient or booting VM\u003c/td\u003e\u003ctd\u003e\u003ccode\u003estart(Type, Args)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{ok, pid()} \u0026#x26;#124; {ok, pid(), State}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eshould start the root supervisor\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e{start_phases, [{Phase, Args}]}\u003c/code\u003e in app file\u003c/td\u003e\u003ctd\u003ekernel booting the app\u003c/td\u003e\u003ctd\u003e\u003ccode\u003estart_phase(Phase, Type, Args)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eok \u0026#x26;#124; {error, Reason}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eOptional. Can isolate specific steps of initialization\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eapplication:stop/1\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eapp shutting down\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eprop_stop(State)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eState\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eOptional. Called before the supervision tree is shut down\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eapplication:stop/1\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eapp shutting down\u003c/td\u003e\u003ctd\u003e\u003ccode\u003estop(State)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eterm()\u003c/code\u003e\u003c/td\u003e\u003ctd\u003ecalled once the app is done running to clean things up\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eHot code update\u003c/td\u003e\u003ctd\u003eSASL’s release handler\u003c/td\u003e\u003ctd\u003e\u003ccode\u003econfig_change(Changed::[{K,V}], New::[{K,V}], Removed::[K])\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eok\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eCalled after a hot code update using the VM’s relup functionality, if the configuration values changed\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3 id=\"supervisors\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#supervisors\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eSupervisors\u003c/h3\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eTrigger\u003c/th\u003e\u003cth\u003eCalled By\u003c/th\u003e\u003cth\u003eHandled By\u003c/th\u003e\u003cth\u003eReturn\u003c/th\u003e\u003cth\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003esupervisor:start_link/2-3\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eparent process\u003c/td\u003e\u003ctd\u003e\u003ccode\u003einit(Arg)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eignore \u0026#x26;#124; {ok, {SupFlag, [Child]}}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eSpecifies a supervisor. Refer to official documentation\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3 id=\"gen_server\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#gen_server\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003egen_server\u003c/h3\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eTrigger\u003c/th\u003e\u003cth\u003eCalled By\u003c/th\u003e\u003cth\u003eHandled By\u003c/th\u003e\u003cth\u003eReturn\u003c/th\u003e\u003cth\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_server:start_link/3-4\u003c/code\u003e\u003c/td\u003e\u003ctd\u003esupervisor\u003c/td\u003e\u003ctd\u003e\u003ccode\u003einit(Arg)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{ok, State [, Option]} \u0026#x26;#124; ignore \u0026#x26;#124; {stop, Reason}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eSet up the initial state of the process\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_server:call/2-3\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ehandle_call(Msg, From, State)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{Type::reply \u0026#x26;#124; noreply, State [, Option]} \u0026#x26;#124; {stop, Reason [, Reply], State}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eRequest/response pattern. A message is received and expects an answer\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_server:cast/2\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ehandle_cast(Msg, State)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{noreply, State [, Option]} \u0026#x26;#124; {stop, Reason, State}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eInformation sent to the process; fire and forget\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003ePid ! Msg\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ehandle_info(Msg, State)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003esame as \u003ccode\u003ehandle_cast/2\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eOut-of-band messages, including monitor signals and \u003ccode\u003e'EXIT'\u003c/code\u003e messages when trappig exit\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eSetting an Option value to \u003ccode\u003e{continue, Val}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003ethe server itself\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ehandle_continue(Val, State)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003esame as \u003ccode\u003ehandle_cast/2\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eUsed to break longer operations into triggerable internal events\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_server:stop/1,3\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient or supervisor\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eterminate(Reason, State)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eterm()\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eCalled when the process is shutting down willingly or through errors. If the process does not trap exits, this callback may be omitted\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003esys:get_status/2-3\u003c/code\u003e, crash logs\u003c/td\u003e\u003ctd\u003eclient, the server itself\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eformat_status(normal \u0026#x26;#124; terminate, [PDict, State])\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e[{data, [{\"State\", Term}]}]\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eUsed to add or remove information that would make it to debugging calls or error logs\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eN/A\u003c/td\u003e\u003ctd\u003esupervisor\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ecode_change(OldVsn, State, Extra)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{ok, NewState}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003ecalled to update a stateful process if the proper instructions are given during a hot code upgrade with releases\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3 id=\"gen_statem\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#gen_statem\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003egen_statem\u003c/h3\u003e\n\u003ch4 id=\"process-management\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#process-management\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eProcess management\u003c/h4\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eTrigger\u003c/th\u003e\u003cth\u003eCalled By\u003c/th\u003e\u003cth\u003eHandled By\u003c/th\u003e\u003cth\u003eReturn\u003c/th\u003e\u003cth\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_statem:start_link/3-4\u003c/code\u003e\u003c/td\u003e\u003ctd\u003esupervisor\u003c/td\u003e\u003ctd\u003e\u003ccode\u003einit(Arg)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{ok, State, Data [, Actions]} \u0026#x26;#124; ignore \u0026#x26;#124; {stop, Reason}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eSets the initial state and data for the state machine\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eN/A\u003c/td\u003e\u003ctd\u003einternal\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ecallback_mode()\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e[state_functions \u0026#x26;#124; handle_event_function [, state_enter]]\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eDefines the type of FSM and whether entering a state triggers a special internal event\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_statem:stop/1,3\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient or supervisor\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eterminate(Reason, State, Data)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eterm()\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eCalled when the process is shutting down willingly or through errors. If the process does not trap exits, this callback may be omitted\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003esys:get_status/2-3\u003c/code\u003e, crash logs\u003c/td\u003e\u003ctd\u003eclient, the server itself\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eformat_status(normal \u0026#x26;#124; terminate, [PDict, State, Data])\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e[{data, [{\"State\", Term}]}]\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eUsed to add or remove information that would make it to debugging calls or error logs\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eN/A\u003c/td\u003e\u003ctd\u003esupervisor\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ecode_change(OldVsn, State, Data, Extra)\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{ok, NewState, NewData}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003ecalled to update a stateful process if the proper instructions are given during a hot code upgrade with releases\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4 id=\"state-handling-and-transitions\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#state-handling-and-transitions\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eState handling and transitions\u003c/h4\u003e\n\u003cp\u003eHandled by either \u003ccode\u003ehandle_event/4\u003c/code\u003e or \u003ccode\u003eStateName/3\u003c/code\u003e functions, based on the value of \u003ccode\u003ecallback_mode()\u003c/code\u003e.\nThe function signatures are either:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003ehandle_event(EventType, EventDetails, State, Data)\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eState(EventType, EventDetails, Data)\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIf the value of \u003ccode\u003eState\u003c/code\u003e is not a list, even though \u003ccode\u003ecallback_mode()\u003c/code\u003e defined \u003ccode\u003estate_functions\u003c/code\u003e, then \u003ccode\u003ehandle_event/4\u003c/code\u003e will be called. All possible return values for either functions are one of:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003e{next_state, State, Data}\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003e{next_state, State, Data, [Actions, ...]}\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003e{stop, Reason, Data}\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003e{stop, Reason, Data, [Actions, ...]}\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eVarious short forms exist, such as \u003ccode\u003ekeep_state_and_data\u003c/code\u003e, \u003ccode\u003e{keep_state, Data}\u003c/code\u003e, \u003ccode\u003e{repeat_state, Data}\u003c/code\u003e, and many more. Refer to the documentation for their content.\u003c/p\u003e\n\u003cp\u003eThe \u003ccode\u003eActions\u003c/code\u003e value is any combination of the following list (non-inclusive): \u003ccode\u003epostpone\u003c/code\u003e, \u003ccode\u003e{next_event, EventType, EventDetails}\u003c/code\u003e, \u003ccode\u003ehibernate\u003c/code\u003e, \u003ccode\u003e{timeout, Delay, EventDetails}\u003c/code\u003e, \u003ccode\u003e{state_timeout, Delay, EventDetails}\u003c/code\u003e, \u003ccode\u003e{reply, From, Reply}\u003c/code\u003e. Consult the documentation for more options.\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eTrigger\u003c/th\u003e\u003cth\u003eCalled By\u003c/th\u003e\u003cth\u003eEvent Type\u003c/th\u003e\u003cth\u003eEvent Details\u003c/th\u003e\u003cth\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_statem:call/2-3\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient\u003c/td\u003e\u003ctd\u003e\u003ccode\u003e{call, From}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eterm()\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eRequest/response pattern. A message is received and is expected to receive an answer\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egen_statem:cast/2\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient\u003c/td\u003e\u003ctd\u003e\u003ccode\u003ecast\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eterm()\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eInformation must be sent to the process; fire and forget\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003ePid ! Msg\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eclient\u003c/td\u003e\u003ctd\u003e\u003ccode\u003einfo\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eMsg\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eOut-of-band messages, including monitor messages and 'EXIT' signals that are trapped\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e{timeout, T, Msg}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eAction\u003c/code\u003e return value\u003c/td\u003e\u003ctd\u003e\u003ccode\u003etimeout\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eMsg\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eA specific timeout that can be set and received internally when the state machine has not received a new event in \u003ccode\u003eT\u003c/code\u003e milliseconds\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e{state_timeout, T, Msg}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eAction\u003c/code\u003e return value\u003c/td\u003e\u003ctd\u003e\u003ccode\u003estate_timeout\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eMsg\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eA specific timeout that can be set and received internally when the state machine has not transitioned to a new different state in T milliseconds\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e{next_event, internal, Msg}\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eAction\u003c/code\u003e return value\u003c/td\u003e\u003ctd\u003e\u003ccode\u003einternal\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e\u003ccode\u003eMsg\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eInternal messages that can be generated by a state machine wanting to trigger itself without looking like external calls\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch2 id=\"interpreting-erl_crash-dump\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#interpreting-erl_crash-dump\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eInterpreting erl_crash dump\u003c/h2\u003e\n\u003cp\u003e\u003cem\u003eReference: \u003ca href=\"http://erlang.org/doc/apps/erts/crash_dump.html\"\u003ehttp://erlang.org/doc/apps/erts/crash_dump.html\u003c/a\u003e\u003c/em\u003e\u003c/p\u003e\n\u003ch2 id=\"docker-erlang-stuff\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#docker-erlang-stuff\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eDocker erlang stuff\u003c/h2\u003e\n\u003ch3 id=\"run-erlang-using-docker-container\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#run-erlang-using-docker-container\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003erun erlang using docker container\u003c/h3\u003e\n\u003cpre class=\"language-sh\"\u003e\u003ccode class=\"language-sh\"\u003edocker run -it --rm --name erlang-inst1 -v \"$PWD\":/usr/src/myapp -w /usr/src/myapp erlang:23-alpine erl\n\u003c/code\u003e\u003c/pre\u003e\n\u003chr\u003e\n\u003cstrong\u003eChildren\u003c/strong\u003e\n\u003col\u003e\n\u003cli\u003e\u003ca href=\"/dendron-notes/notes/fbc7b495-4e18-4547-a795-9afa2805635a\"\u003eData\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/dendron-notes/notes/14c34d7c-644d-4cb8-9df3-d94cefa8fa74\"\u003eSyntax\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/dendron-notes/notes/ac615334-69f5-4f93-9ec1-7baf7006485e\"\u003eTest\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e","noteIndex":{"id":"root","title":"root","desc":"","updated":1595961348801,"created":1595961348801,"custom":{"nav_order":0,"permalink":"/"},"fname":"root","type":"note","vault":{"fsPath":".","name":"vault","selfContained":true},"contentHash":"dad9815845eec627c937e34281a065d5","links":[],"anchors":{"root":{"type":"header","text":"Root","value":"root","line":8,"column":0,"depth":1}},"children":["ced683be-fe67-4022-989f-abc6d311cb3a","132fe0fe-fc74-4dbe-982a-9dcac677f664","a44df307-1a67-417b-b733-da109c3be441","b9686e84-d9a1-4dbb-8474-1a9c156d6d12","93a5dc42-8663-4d3c-924f-82e8faa35a67","f80d45a1-bd90-4097-96bc-0301fbc4d937","19992660-3602-4c64-a3a5-e9c05f19ffac","3f157f98-5c61-4479-b311-956d4b0ef67a"],"parent":null,"data":{},"body":"\n# Root\n\nThis is the root fo your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. \n"},"collectionChildren":null,"customHeadContent":null,"config":{"version":5,"dev":{"enablePreviewV2":true},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":false,"leaveTrace":true,"bubbleUpCreateNew":true,"vaultSelectionModeOnCreate":"smart","fuzzThreshold":0.2}},"randomNote":{},"insertNote":{"initialValue":"templates"},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false},"copyNoteLink":{}},"workspace":{"vaults":[{"fsPath":".","name":"vault","selfContained":true}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"","dateFormat":"","addBehavior":"childOfCurrent","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"maxPreviewsCached":10,"maxNoteLength":204800,"dendronVersion":"0.87.3","enableEditorDecorations":true,"enableFullHierarchyNoteTitle":false},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableMermaid":true,"enablePrettyRefs":true,"enableKatex":true,"automaticallyShowPreview":false,"enableFrontmatterTags":true,"enableHashesForFMTags":false},"publishing":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableMermaid":true,"enablePrettyRefs":true,"enableKatex":true,"assetsPrefix":"/dendron-notes","copyAssets":true,"siteHierarchies":["root"],"enableSiteLastModified":true,"siteRootDir":"docs","siteUrl":"https://jackyhui96.github.io","enableFrontmatterTags":true,"enableHashesForFMTags":false,"enableRandomlyColoredTags":true,"duplicateNoteBehavior":{"action":"useVault","payload":["vault"]},"writeStubs":false,"seo":{"title":"Dendron Notes","description":"Personal knowledge space"},"github":{"enableEditLink":true,"editLinkText":"Edit this page on GitLab","editBranch":"main","editViewMode":"tree"},"enablePrettyLinks":true,"siteFaviconPath":"favicon.ico","siteIndex":"root"}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"8af8ad5e-138c-4471-b670-3d3474d07401"},"buildId":"n99zhAM-gKPmAIazFHerv","assetPrefix":"/dendron-notes","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

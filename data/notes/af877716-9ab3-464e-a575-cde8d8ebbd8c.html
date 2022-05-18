@@ -1,0 +1,14 @@
+<h1 id="awk"><a aria-hidden="true" class="anchor-heading" href="#awk"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Awk</h1>
+<h1 id="awk-1"><a aria-hidden="true" class="anchor-heading" href="#awk-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>AWK</h1>
+<h2 id="sum-up-lines"><a aria-hidden="true" class="anchor-heading" href="#sum-up-lines"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sum up lines</h2>
+<pre class="language-sh"><code class="language-sh">awk '{ sum += $NF } END { if (NR > 0) print sum }'
+</code></pre>
+<h2 id="sort-by-line-length"><a aria-hidden="true" class="anchor-heading" href="#sort-by-line-length"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sort by line length</h2>
+<pre class="language-sh"><code class="language-sh">awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2-
+</code></pre>
+<h2 id="print-line-length"><a aria-hidden="true" class="anchor-heading" href="#print-line-length"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>print line length</h2>
+<pre class="language-sh"><code class="language-sh">awk '{ print length }'
+</code></pre>
+<h2 id="average-of-lines"><a aria-hidden="true" class="anchor-heading" href="#average-of-lines"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Average of lines</h2>
+<pre class="language-sh"><code class="language-sh">awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }'
+</code></pre>

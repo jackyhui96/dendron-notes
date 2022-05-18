@@ -1,0 +1,37 @@
+<h1 id="mermaid"><a aria-hidden="true" class="anchor-heading" href="#mermaid"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Mermaid</h1>
+<h1 id="mermaid-1"><a aria-hidden="true" class="anchor-heading" href="#mermaid-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Mermaid</h1>
+<h2 id="syntax"><a aria-hidden="true" class="anchor-heading" href="#syntax"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Syntax</h2>
+<h3 id="flow-chart"><a aria-hidden="true" class="anchor-heading" href="#flow-chart"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Flow Chart</h3>
+<div class="mermaid">
+  graph LR
+A --> B
+</div>
+<h4 id="shapes"><a aria-hidden="true" class="anchor-heading" href="#shapes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Shapes</h4>
+<p>Default is square for a node</p>
+<p>Cylinder</p>
+<pre class="language-sh"><code class="language-sh">id1[(This is the text in the cylinder)]
+</code></pre>
+<p>Circles</p>
+<pre><code>id1((This is the text in the circle))
+</code></pre>
+<h4 id="links"><a aria-hidden="true" class="anchor-heading" href="#links"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Links</h4>
+<p>Solid Line</p>
+<pre class="language-sh"><code class="language-sh">A --> B
+</code></pre>
+<p>Open Line</p>
+<pre class="language-sh"><code class="language-sh">A --- B
+</code></pre>
+<p>Text on links</p>
+<pre class="language-sh"><code class="language-sh">A-- This is the text! ---B
+</code></pre>
+<h4 id="styling"><a aria-hidden="true" class="anchor-heading" href="#styling"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Styling</h4>
+<h5 id="links-1"><a aria-hidden="true" class="anchor-heading" href="#links-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Links</h5>
+<p>Links have no id, so the order of the number of link is defined instead</p>
+<pre class="language-sh"><code class="language-sh">linkStyle 3 stroke:#ff3,stroke-width:4px,color:red;
+</code></pre>
+<h5 id="nodes"><a aria-hidden="true" class="anchor-heading" href="#nodes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Nodes</h5>
+<pre class="language-sh"><code class="language-sh">classDef push fill:#95e683;
+App:::push
+</code></pre>
+<h2 id="references"><a aria-hidden="true" class="anchor-heading" href="#references"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>References</h2>
+<p><em><a href="https://mermaid-js.github.io/mermaid/diagrams-and-syntax-and-examples/">https://mermaid-js.github.io/mermaid/diagrams-and-syntax-and-examples/</a></em></p>

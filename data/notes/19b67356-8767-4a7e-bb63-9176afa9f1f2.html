@@ -1,0 +1,68 @@
+<h1 id="plexmediaserver"><a aria-hidden="true" class="anchor-heading" href="#plexmediaserver"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Plexmediaserver</h1>
+<h1 id="plexmediaserver-1"><a aria-hidden="true" class="anchor-heading" href="#plexmediaserver-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Plexmediaserver</h1>
+<h2 id="plex_home-location"><a aria-hidden="true" class="anchor-heading" href="#plex_home-location"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>$PLEX_HOME Location</h2>
+<p>/var/lib/plexmediaserver/</p>
+<h2 id="move-the-installation"><a aria-hidden="true" class="anchor-heading" href="#move-the-installation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Move the installation</h2>
+<p>Steps work for linux Plex Media Server (<strong>PMS</strong>), see reference for other OS.</p>
+<ol>
+<li>Disable emptying of trash on <strong>source PMS</strong>
+1.1 disabe <code>Settings > Library > Empty trash automatically after every scan</code> preference for server</li>
+<li>Install <strong>PMS</strong> on the <strong>destination</strong> server</li>
+<li>Sign out and stop the <strong>destination PMS</strong>, sign out using <code>settings > server > general</code></li>
+<li>Copy Server Data from <strong>source PMS</strong>
+4.1 stop the plex server
+4.2 data is stored at <code>/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/</code>
+4.3 compress the files by using <code>tar</code>, then copy to <strong>destination PMS</strong>, </li>
+<li>Copy additional settings - <strong>*Not needed for linux, as done in previous step*</strong></li>
+<li>Make sure the copied files are owned by <code>plex:plex</code></li>
+<li>Reboot the <strong>destination PMS</strong> server</li>
+<li>Start the <strong>destination PMS</strong> application</li>
+<li>Open Plex Web App <strong>(PWA)</strong></li>
+<li>Sign Out and Back into the Server</li>
+<li>Edit your libraries,
+11.1 edit library and add appropriate folder for where content is located on the <strong>destination PMS</strong></li>
+<li>Scan the library, click on <code>Scan Library Files</code> on the Plex Media App</li>
+<li>Remove old content location, when you can verify that all of your content is working</li>
+<li>Final Maintenance
+14.1 Turn <code>Empty trash automatically after every scan</code> in the <strong>PWA</strong>
+14.2 <code>Empty Trash</code> on the <strong>PWA</strong>
+14.3 <code>Clean Bundles</code> on the <strong>PWA</strong>, wait couple of minutes after dialog exits
+14.4 <code>Optimize Database</code> on the <strong>PWA</strong></li>
+</ol>
+<p><em>Reference: <a href="https://support.plex.tv/articles/201370363-move-an-install-to-another-system/">https://support.plex.tv/articles/201370363-move-an-install-to-another-system/</a></em></p>
+<h2 id="repair-a-corrupt-database"><a aria-hidden="true" class="anchor-heading" href="#repair-a-corrupt-database"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Repair a Corrupt Database</h2>
+<p>Follow the steps in the reference to fix issues with media getting stuck in the 'Continue Watching' section despite being marked as unplayed.</p>
+<p><em>Reference: <a href="https://support.plex.tv/articles/201100678-repair-a-corrupt-database/?_ga=2.121149832.1231479726.1601827334-1128507795.1600200934">Plex:Repair a Corrupt Database</a></em></p>
+<h2 id="docker-install"><a aria-hidden="true" class="anchor-heading" href="#docker-install"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Docker install</h2>
+<pre class="language-sh"><code class="language-sh">docker run -d \
+  --name=plex \
+  --net=host \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e VERSION=docker \
+  -v /usr/local/docker_apps/plex/config:/config \
+  -v /media/usb1:/media \
+  --restart unless-stopped \
+  linuxserver/plex:arm32v7-latest
+</code></pre>
+<h3 id="support"><a aria-hidden="true" class="anchor-heading" href="#support"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Support</h3>
+<pre class="language-sh"><code class="language-sh">## Shell access whilst the container is running:
+docker exec -it plex /bin/bash
+
+## To monitor the logs of the container in realtime:
+docker logs -f plex
+
+## Container version number
+docker inspect -f '{{ index .Config.Labels "build_version" }}' plex
+
+## Image version number
+docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/plex:arm32v7-latest
+</code></pre>
+<h3 id="error-update-libseccomp2"><a aria-hidden="true" class="anchor-heading" href="#error-update-libseccomp2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Error update libseccomp2</h3>
+<p><code>libc++abi: terminating with uncaught exception of type std::__2::system_error: clock_gettime(CLOCK_MONOTONIC) failed: Operation not permitted</code></p>
+<p>Add the backports repo for DebianBuster:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC 648ACFD622F3D138
+<span class="token builtin class-name">echo</span> <span class="token string">"deb http://deb.debian.org/debian buster-backports main"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/apt/sources.list.d/buster-backports.list
+<span class="token function">sudo</span> <span class="token function">apt</span> update
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> -t buster-backports libseccomp2
+</code></pre>

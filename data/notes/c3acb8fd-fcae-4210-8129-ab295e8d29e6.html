@@ -1,0 +1,26 @@
+<h1 id="ip"><a aria-hidden="true" class="anchor-heading" href="#ip"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Ip</h1>
+<h1 id="ip-address"><a aria-hidden="true" class="anchor-heading" href="#ip-address"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>IP Address</h1>
+<p>Stuff about IP Address and setting the configuration</p>
+<h2 id="static-ip-address"><a aria-hidden="true" class="anchor-heading" href="#static-ip-address"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Static IP Address</h2>
+<p>Setting a static IP addres will ensure that the server will use the same IP address all the time.</p>
+<h3 id="get-current-ip-address"><a aria-hidden="true" class="anchor-heading" href="#get-current-ip-address"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Get Current IP Address</h3>
+<pre class="language-sh"><code class="language-sh">hostname -I
+</code></pre>
+<h3 id="set-a-static-ip-address"><a aria-hidden="true" class="anchor-heading" href="#set-a-static-ip-address"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Set a Static IP Address</h3>
+<p>Edit <code>/etc/network/interfaces</code> command and set your configuration</p>
+<h4 id="example"><a aria-hidden="true" class="anchor-heading" href="#example"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Example</h4>
+<pre class="language-sh"><code class="language-sh">auto eth0
+iface eth0 inet static
+        address 192.168.1.100 # current device ip
+        netmask 255.255.255.0
+        gateway 192.168.1.1 # modem gateway
+</code></pre>
+<h4 id="example-using-etcdhcpcdconf"><a aria-hidden="true" class="anchor-heading" href="#example-using-etcdhcpcdconf"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Example using /etc/dhcpcd.conf</h4>
+<pre class="language-sh"><code class="language-sh">interface eth0
+
+static ip_address=192.168.208.103/24
+static routers=192.168.208.1
+static domain_name_servers=8.8.8.8
+</code></pre>
+<h3 id="connecting-2-routers-together-one-as-dumbap"><a aria-hidden="true" class="anchor-heading" href="#connecting-2-routers-together-one-as-dumbap"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Connecting 2 routers together, one as DumbAP</h3>
+<p><em>Reference: <a href="https://openwrt.org/docs/guide-user/network/wifi/dumbap">https://openwrt.org/docs/guide-user/network/wifi/dumbap</a></em></p>

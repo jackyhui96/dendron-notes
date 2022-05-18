@@ -1,0 +1,11 @@
+<h1 id="chkconfig"><a aria-hidden="true" class="anchor-heading" href="#chkconfig"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Chkconfig</h1>
+<h1 id="chkconfig-1"><a aria-hidden="true" class="anchor-heading" href="#chkconfig-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>chkconfig</h1>
+<p>Used to autostart services on startup of linux servers</p>
+<pre class="language-sh"><code class="language-sh">chkconfig --list collectd
+chkconfig --add collectd
+chkconfig collectd on
+
+## for centos 7
+systemctl is-enabled collectd
+systemctl enable collectd
+</code></pre>

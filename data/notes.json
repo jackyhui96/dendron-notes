@@ -1,0 +1,3134 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1652904412314,
+      "created": 1652904412314,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "root": {
+      "id": "root",
+      "title": "root",
+      "desc": "",
+      "updated": 1595961348801,
+      "created": 1595961348801,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "dad9815845eec627c937e34281a065d5",
+      "links": [],
+      "anchors": {
+        "root": {
+          "type": "header",
+          "text": "Root",
+          "value": "root",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "ced683be-fe67-4022-989f-abc6d311cb3a",
+        "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+        "a44df307-1a67-417b-b733-da109c3be441",
+        "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+        "93a5dc42-8663-4d3c-924f-82e8faa35a67",
+        "f80d45a1-bd90-4097-96bc-0301fbc4d937",
+        "19992660-3602-4c64-a3a5-e9c05f19ffac",
+        "3f157f98-5c61-4479-b311-956d4b0ef67a"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "3f157f98-5c61-4479-b311-956d4b0ef67a": {
+      "id": "3f157f98-5c61-4479-b311-956d4b0ef67a",
+      "title": "Vscode",
+      "desc": "",
+      "updated": 1611005372468,
+      "created": 1611005372468,
+      "custom": {},
+      "fname": "vscode",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "30f98abcd1c56f4a1892e5eae7d363f3",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "0ac64a0f-5eb5-4e4c-9018-828ba3cfe3e2"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "0ac64a0f-5eb5-4e4c-9018-828ba3cfe3e2": {
+      "id": "0ac64a0f-5eb5-4e4c-9018-828ba3cfe3e2",
+      "title": "Ext",
+      "desc": "",
+      "updated": 1611005377484,
+      "created": 1611005377485,
+      "custom": {},
+      "fname": "vscode.ext",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "dd5ec7fe6e1bc48f2728d6085eb4b219",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "cbf8b0e6-f6d0-4924-9aa1-268571b03961"
+      ],
+      "parent": "3f157f98-5c61-4479-b311-956d4b0ef67a",
+      "data": {}
+    },
+    "cbf8b0e6-f6d0-4924-9aa1-268571b03961": {
+      "id": "cbf8b0e6-f6d0-4924-9aa1-268571b03961",
+      "title": "Simplevim",
+      "desc": "",
+      "updated": 1611006554558,
+      "created": 1611005382311,
+      "custom": {},
+      "fname": "vscode.ext.simplevim",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "3b01fbf54f6d51274338f4f6f386ab47",
+      "links": [],
+      "anchors": {
+        "simplevim": {
+          "type": "header",
+          "text": "SimpleVim",
+          "value": "simplevim",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "operators": {
+          "type": "header",
+          "text": "Operators",
+          "value": "operators",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "operatorranges": {
+          "type": "header",
+          "text": "OperatorRanges",
+          "value": "operatorranges",
+          "line": 30,
+          "column": 0,
+          "depth": 2
+        },
+        "motions": {
+          "type": "header",
+          "text": "Motions",
+          "value": "motions",
+          "line": 67,
+          "column": 0,
+          "depth": 2
+        },
+        "actions": {
+          "type": "header",
+          "text": "Actions",
+          "value": "actions",
+          "line": 98,
+          "column": 0,
+          "depth": 2
+        },
+        "differences-from-vim": {
+          "type": "header",
+          "text": "Differences From Vim",
+          "value": "differences-from-vim",
+          "line": 140,
+          "column": 0,
+          "depth": 2
+        },
+        "settings": {
+          "type": "header",
+          "text": "Settings",
+          "value": "settings",
+          "line": 167,
+          "column": 0,
+          "depth": 2
+        },
+        "ctrl--f-is-overridden": {
+          "type": "header",
+          "text": "Ctrl + F is overridden",
+          "value": "ctrl--f-is-overridden",
+          "line": 176,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "0ac64a0f-5eb5-4e4c-9018-828ba3cfe3e2",
+      "data": {}
+    },
+    "19992660-3602-4c64-a3a5-e9c05f19ffac": {
+      "id": "19992660-3602-4c64-a3a5-e9c05f19ffac",
+      "title": "Scratch",
+      "desc": "",
+      "updated": 1595953214301,
+      "created": 1595953214301,
+      "custom": {},
+      "fname": "scratch",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "beded3c088768ad463fab464107a413b",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "root",
+      "data": {}
+    },
+    "f80d45a1-bd90-4097-96bc-0301fbc4d937": {
+      "id": "f80d45a1-bd90-4097-96bc-0301fbc4d937",
+      "title": "Pi",
+      "desc": "",
+      "updated": 1613464398930,
+      "created": 1613464398930,
+      "custom": {},
+      "fname": "pi",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "3b19074996ef113ae941f348b98e3d16",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "67215e28-78b6-443a-916e-43d247a4dd2d"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "67215e28-78b6-443a-916e-43d247a4dd2d": {
+      "id": "67215e28-78b6-443a-916e-43d247a4dd2d",
+      "title": "Setup",
+      "desc": "",
+      "updated": 1613464414649,
+      "created": 1613464405744,
+      "custom": {},
+      "fname": "pi.setup",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "d3eaddd1806ab3d7ac35583a8b899ea0",
+      "links": [],
+      "anchors": {
+        "setting-up-the-raspberri-pi": {
+          "type": "header",
+          "text": "Setting up the Raspberri Pi",
+          "value": "setting-up-the-raspberri-pi",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "setup-steps": {
+          "type": "header",
+          "text": "Setup Steps",
+          "value": "setup-steps",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "enable-ssh": {
+          "type": "header",
+          "text": "Enable SSH",
+          "value": "enable-ssh",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "installing-docker": {
+          "type": "header",
+          "text": "Installing Docker",
+          "value": "installing-docker",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "uninstalling-docker": {
+          "type": "header",
+          "text": "Uninstalling Docker",
+          "value": "uninstalling-docker",
+          "line": 28,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "f80d45a1-bd90-4097-96bc-0301fbc4d937",
+      "data": {}
+    },
+    "93a5dc42-8663-4d3c-924f-82e8faa35a67": {
+      "id": "93a5dc42-8663-4d3c-924f-82e8faa35a67",
+      "title": "Net",
+      "desc": "",
+      "updated": 1619436847216,
+      "created": 1599406259569,
+      "custom": {},
+      "fname": "net",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "75bb59ea86f58d4a70f83787c945058d",
+      "links": [],
+      "anchors": {
+        "network-stuff": {
+          "type": "header",
+          "text": "Network stuff",
+          "value": "network-stuff",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "test-connections": {
+          "type": "header",
+          "text": "Test connections",
+          "value": "test-connections",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "c3acb8fd-fcae-4210-8129-ab295e8d29e6"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "c3acb8fd-fcae-4210-8129-ab295e8d29e6": {
+      "id": "c3acb8fd-fcae-4210-8129-ab295e8d29e6",
+      "title": "Ip",
+      "desc": "",
+      "updated": 1614422554848,
+      "created": 1599406268504,
+      "custom": {},
+      "fname": "net.ip",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "ce81679c79b3f7eba5cd9c2edfd9bf0d",
+      "links": [],
+      "anchors": {
+        "ip-address": {
+          "type": "header",
+          "text": "IP Address",
+          "value": "ip-address",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "static-ip-address": {
+          "type": "header",
+          "text": "Static IP Address",
+          "value": "static-ip-address",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "get-current-ip-address": {
+          "type": "header",
+          "text": "Get Current IP Address",
+          "value": "get-current-ip-address",
+          "line": 13,
+          "column": 0,
+          "depth": 3
+        },
+        "set-a-static-ip-address": {
+          "type": "header",
+          "text": "Set a Static IP Address",
+          "value": "set-a-static-ip-address",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "example": {
+          "type": "header",
+          "text": "Example",
+          "value": "example",
+          "line": 20,
+          "column": 0,
+          "depth": 4
+        },
+        "example-using-etcdhcpcdconf": {
+          "type": "header",
+          "text": "Example using /etc/dhcpcd.conf",
+          "value": "example-using-etcdhcpcdconf",
+          "line": 29,
+          "column": 0,
+          "depth": 4
+        },
+        "connecting-2-routers-together-one-as-dumbap": {
+          "type": "header",
+          "text": "Connecting 2 routers together, one as DumbAP",
+          "value": "connecting-2-routers-together-one-as-dumbap",
+          "line": 39,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "93a5dc42-8663-4d3c-924f-82e8faa35a67",
+      "data": {}
+    },
+    "b9686e84-d9a1-4dbb-8474-1a9c156d6d12": {
+      "id": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+      "title": "Lang",
+      "desc": "",
+      "updated": 1599035693826,
+      "created": 1599035693826,
+      "custom": {},
+      "fname": "lang",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "3dce1f8e1b83511dfbb8251814e3f7b5",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "8af8ad5e-138c-4471-b670-3d3474d07401",
+        "4e41f042-daa2-45b2-ad77-87efa2322163",
+        "03d38906-77bd-43a1-b4e2-cfe8f9a800de",
+        "35a22ebd-29ee-4ecf-8068-74347c4578b7"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "35a22ebd-29ee-4ecf-8068-74347c4578b7": {
+      "id": "35a22ebd-29ee-4ecf-8068-74347c4578b7",
+      "title": "Puml",
+      "desc": "",
+      "updated": 1611006735220,
+      "created": 1605773790054,
+      "custom": {},
+      "fname": "lang.puml",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "b480865dc5b35ada72b0f5f4bb99e39b",
+      "links": [],
+      "anchors": {
+        "plantuml": {
+          "type": "header",
+          "text": "PlantUML",
+          "value": "plantuml",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "component-diagrams": {
+          "type": "header",
+          "text": "Component Diagrams",
+          "value": "component-diagrams",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "shapes": {
+          "type": "header",
+          "text": "Shapes",
+          "value": "shapes",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "styling": {
+          "type": "header",
+          "text": "Styling",
+          "value": "styling",
+          "line": 21,
+          "column": 0,
+          "depth": 3
+        },
+        "formatting": {
+          "type": "header",
+          "text": "Formatting",
+          "value": "formatting",
+          "line": 38,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+      "data": {}
+    },
+    "03d38906-77bd-43a1-b4e2-cfe8f9a800de": {
+      "id": "03d38906-77bd-43a1-b4e2-cfe8f9a800de",
+      "title": "Mermaid",
+      "desc": "",
+      "updated": 1603961822734,
+      "created": 1603961822734,
+      "custom": {},
+      "fname": "lang.mermaid",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "88f61f46bbcd4e13a5df321abc92648f",
+      "links": [],
+      "anchors": {
+        "mermaid": {
+          "type": "header",
+          "text": "Mermaid",
+          "value": "mermaid",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "syntax": {
+          "type": "header",
+          "text": "Syntax",
+          "value": "syntax",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "flow-chart": {
+          "type": "header",
+          "text": "Flow Chart",
+          "value": "flow-chart",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "shapes": {
+          "type": "header",
+          "text": "Shapes",
+          "value": "shapes",
+          "line": 17,
+          "column": 0,
+          "depth": 4
+        },
+        "links": {
+          "type": "header",
+          "text": "Links",
+          "value": "links",
+          "line": 30,
+          "column": 0,
+          "depth": 4
+        },
+        "styling": {
+          "type": "header",
+          "text": "Styling",
+          "value": "styling",
+          "line": 43,
+          "column": 0,
+          "depth": 4
+        },
+        "links-1": {
+          "type": "header",
+          "text": "Links",
+          "value": "links-1",
+          "line": 45,
+          "column": 0,
+          "depth": 5
+        },
+        "nodes": {
+          "type": "header",
+          "text": "Nodes",
+          "value": "nodes",
+          "line": 50,
+          "column": 0,
+          "depth": 5
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 57,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+      "data": {}
+    },
+    "4e41f042-daa2-45b2-ad77-87efa2322163": {
+      "id": "4e41f042-daa2-45b2-ad77-87efa2322163",
+      "title": "Markdown",
+      "desc": "",
+      "updated": 1599035941894,
+      "created": 1599035941894,
+      "custom": {},
+      "fname": "lang.markdown",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "b371e488e47279652e275d95718bdbbb",
+      "links": [],
+      "anchors": {
+        "markdown": {
+          "type": "header",
+          "text": "Markdown",
+          "value": "markdown",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "syntax": {
+          "type": "header",
+          "text": "Syntax",
+          "value": "syntax",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "phrase-emphasis": {
+          "type": "header",
+          "text": "Phrase emphasis",
+          "value": "phrase-emphasis",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "links": {
+          "type": "header",
+          "text": "Links",
+          "value": "links",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "superscript-and-subscript": {
+          "type": "header",
+          "text": "Superscript and subscript",
+          "value": "superscript-and-subscript",
+          "line": 25,
+          "column": 0,
+          "depth": 3
+        },
+        "images": {
+          "type": "header",
+          "text": "Images",
+          "value": "images",
+          "line": 36,
+          "column": 0,
+          "depth": 3
+        },
+        "headings": {
+          "type": "header",
+          "text": "Headings",
+          "value": "headings",
+          "line": 43,
+          "column": 0,
+          "depth": 3
+        },
+        "heading-1": {
+          "type": "header",
+          "text": "Heading 1",
+          "value": "heading-1",
+          "line": 49,
+          "column": 0,
+          "depth": 1
+        },
+        "heading-2": {
+          "type": "header",
+          "text": "Heading 2",
+          "value": "heading-2",
+          "line": 51,
+          "column": 0,
+          "depth": 2
+        },
+        "lists": {
+          "type": "header",
+          "text": "Lists",
+          "value": "lists",
+          "line": 55,
+          "column": 0,
+          "depth": 3
+        },
+        "blockquotes": {
+          "type": "header",
+          "text": "Blockquotes",
+          "value": "blockquotes",
+          "line": 95,
+          "column": 0,
+          "depth": 3
+        },
+        "code-spans": {
+          "type": "header",
+          "text": "Code spans",
+          "value": "code-spans",
+          "line": 119,
+          "column": 0,
+          "depth": 3
+        },
+        "preformatted-code-blocks": {
+          "type": "header",
+          "text": "Preformatted code blocks",
+          "value": "preformatted-code-blocks",
+          "line": 129,
+          "column": 0,
+          "depth": 3
+        },
+        "horizontal-rules": {
+          "type": "header",
+          "text": "Horizontal rules",
+          "value": "horizontal-rules",
+          "line": 134,
+          "column": 0,
+          "depth": 3
+        },
+        "manual-line-breaks": {
+          "type": "header",
+          "text": "Manual line breaks",
+          "value": "manual-line-breaks",
+          "line": 144,
+          "column": 0,
+          "depth": 3
+        },
+        "text-colors-and-fonts": {
+          "type": "header",
+          "text": "Text colors and fonts",
+          "value": "text-colors-and-fonts",
+          "line": 155,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+      "data": {}
+    },
+    "8af8ad5e-138c-4471-b670-3d3474d07401": {
+      "id": "8af8ad5e-138c-4471-b670-3d3474d07401",
+      "title": "Erlang",
+      "desc": "",
+      "updated": 1625481523541,
+      "created": 1602246697398,
+      "custom": {},
+      "fname": "lang.erlang",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "cd002081e72e7708926e7f90de88c841",
+      "links": [],
+      "anchors": {
+        "erlang": {
+          "type": "header",
+          "text": "Erlang",
+          "value": "erlang",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "tail-recursive-efficiency": {
+          "type": "header",
+          "text": "tail recursive efficiency",
+          "value": "tail-recursive-efficiency",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "implementation-of-erlang-maps": {
+          "type": "header",
+          "text": "Implementation of Erlang Maps",
+          "value": "implementation-of-erlang-maps",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        },
+        "advanced-stuff-about-list-sizes-and-sharing": {
+          "type": "header",
+          "text": "Advanced stuff about list sizes and sharing",
+          "value": "advanced-stuff-about-list-sizes-and-sharing",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "gb-tree-stuff": {
+          "type": "header",
+          "text": "GB Tree stuff",
+          "value": "gb-tree-stuff",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "when-to-use-ok-tuple": {
+          "type": "header",
+          "text": "When to use ok tuple",
+          "value": "when-to-use-ok-tuple",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        },
+        "data-comparisons": {
+          "type": "header",
+          "text": "Data Comparisons",
+          "value": "data-comparisons",
+          "line": 38,
+          "column": 0,
+          "depth": 2
+        },
+        "try-catch-vs-catch": {
+          "type": "header",
+          "text": "try catch vs catch",
+          "value": "try-catch-vs-catch",
+          "line": 41,
+          "column": 0,
+          "depth": 2
+        },
+        "good-resources": {
+          "type": "header",
+          "text": "Good resources",
+          "value": "good-resources",
+          "line": 46,
+          "column": 0,
+          "depth": 2
+        },
+        "ets-scalability": {
+          "type": "header",
+          "text": "ETS Scalability",
+          "value": "ets-scalability",
+          "line": 50,
+          "column": 0,
+          "depth": 2
+        },
+        "behaviours": {
+          "type": "header",
+          "text": "Behaviours",
+          "value": "behaviours",
+          "line": 54,
+          "column": 0,
+          "depth": 2
+        },
+        "applications": {
+          "type": "header",
+          "text": "Applications",
+          "value": "applications",
+          "line": 57,
+          "column": 0,
+          "depth": 3
+        },
+        "supervisors": {
+          "type": "header",
+          "text": "Supervisors",
+          "value": "supervisors",
+          "line": 66,
+          "column": 0,
+          "depth": 3
+        },
+        "gen_server": {
+          "type": "header",
+          "text": "gen_server",
+          "value": "gen_server",
+          "line": 71,
+          "column": 0,
+          "depth": 3
+        },
+        "gen_statem": {
+          "type": "header",
+          "text": "gen_statem",
+          "value": "gen_statem",
+          "line": 82,
+          "column": 0,
+          "depth": 3
+        },
+        "process-management": {
+          "type": "header",
+          "text": "Process management",
+          "value": "process-management",
+          "line": 83,
+          "column": 0,
+          "depth": 4
+        },
+        "state-handling-and-transitions": {
+          "type": "header",
+          "text": "State handling and transitions",
+          "value": "state-handling-and-transitions",
+          "line": 92,
+          "column": 0,
+          "depth": 4
+        },
+        "interpreting-erl_crash-dump": {
+          "type": "header",
+          "text": "Interpreting erl_crash dump",
+          "value": "interpreting-erl_crash-dump",
+          "line": 117,
+          "column": 0,
+          "depth": 2
+        },
+        "docker-erlang-stuff": {
+          "type": "header",
+          "text": "Docker erlang stuff",
+          "value": "docker-erlang-stuff",
+          "line": 120,
+          "column": 0,
+          "depth": 2
+        },
+        "run-erlang-using-docker-container": {
+          "type": "header",
+          "text": "run erlang using docker container",
+          "value": "run-erlang-using-docker-container",
+          "line": 122,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [
+        "fbc7b495-4e18-4547-a795-9afa2805635a",
+        "14c34d7c-644d-4cb8-9df3-d94cefa8fa74",
+        "ac615334-69f5-4f93-9ec1-7baf7006485e"
+      ],
+      "parent": "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+      "data": {}
+    },
+    "ac615334-69f5-4f93-9ec1-7baf7006485e": {
+      "id": "ac615334-69f5-4f93-9ec1-7baf7006485e",
+      "title": "Test",
+      "desc": "",
+      "updated": 1620648199647,
+      "created": 1610988868765,
+      "custom": {},
+      "fname": "lang.erlang.test",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "eac427ff74cbd0569d456f729fbc0c4b",
+      "links": [],
+      "anchors": {
+        "erlang-tests": {
+          "type": "header",
+          "text": "Erlang Tests",
+          "value": "erlang-tests",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "ct-suites": {
+          "type": "header",
+          "text": "CT Suites",
+          "value": "ct-suites",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "eunit": {
+          "type": "header",
+          "text": "EUnit",
+          "value": "eunit",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "test-tips": {
+          "type": "header",
+          "text": "Test Tips",
+          "value": "test-tips",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "config": {
+          "type": "header",
+          "text": "Config",
+          "value": "config",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "8af8ad5e-138c-4471-b670-3d3474d07401",
+      "data": {}
+    },
+    "14c34d7c-644d-4cb8-9df3-d94cefa8fa74": {
+      "id": "14c34d7c-644d-4cb8-9df3-d94cefa8fa74",
+      "title": "Syntax",
+      "desc": "",
+      "updated": 1611141607481,
+      "created": 1609935081566,
+      "custom": {},
+      "fname": "lang.erlang.syntax",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "16a306b8e1ebc476dd41153651b9ce6c",
+      "links": [],
+      "anchors": {
+        "syntax": {
+          "type": "header",
+          "text": "Syntax",
+          "value": "syntax",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "modules": {
+          "type": "header",
+          "text": "Modules",
+          "value": "modules",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "processes-and-signal": {
+          "type": "header",
+          "text": "Processes and Signal",
+          "value": "processes-and-signal",
+          "line": 206,
+          "column": 0,
+          "depth": 2
+        },
+        "behaviours": {
+          "type": "header",
+          "text": "Behaviours",
+          "value": "behaviours",
+          "line": 264,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "8af8ad5e-138c-4471-b670-3d3474d07401",
+      "data": {}
+    },
+    "fbc7b495-4e18-4547-a795-9afa2805635a": {
+      "id": "fbc7b495-4e18-4547-a795-9afa2805635a",
+      "title": "Data",
+      "desc": "",
+      "updated": 1609935021488,
+      "created": 1609934378913,
+      "custom": {},
+      "fname": "lang.erlang.data",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "f6ac43c526a1baf2227068373d468db1",
+      "links": [],
+      "anchors": {
+        "data-types": {
+          "type": "header",
+          "text": "Data Types",
+          "value": "data-types",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "8af8ad5e-138c-4471-b670-3d3474d07401",
+      "data": {}
+    },
+    "a44df307-1a67-417b-b733-da109c3be441": {
+      "id": "a44df307-1a67-417b-b733-da109c3be441",
+      "title": "Journal",
+      "desc": "",
+      "updated": 1596301069349,
+      "created": 1596301069349,
+      "custom": {},
+      "fname": "journal",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "564da0dbbb1e978649ba2835c2bc1de3",
+      "links": [],
+      "anchors": {
+        "journal": {
+          "type": "header",
+          "text": "Journal",
+          "value": "journal",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "7f4a78d9-41c7-4753-8714-d91bc9794897",
+        "3g8kwwze72yssn0v6zl3lq7"
+      ],
+      "parent": "root",
+      "data": {},
+      "schema": {
+        "schemaId": "journal",
+        "moduleId": "journal"
+      }
+    },
+    "3g8kwwze72yssn0v6zl3lq7": {
+      "fname": "journal.template",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1652904412255,
+      "created": 1652904412255,
+      "id": "3g8kwwze72yssn0v6zl3lq7",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "be556b93-fcad-4352-b96a-0089be9e4201"
+      ],
+      "parent": "a44df307-1a67-417b-b733-da109c3be441",
+      "data": {},
+      "title": "Template"
+    },
+    "be556b93-fcad-4352-b96a-0089be9e4201": {
+      "id": "be556b93-fcad-4352-b96a-0089be9e4201",
+      "title": "Daily",
+      "desc": "",
+      "updated": 1596301096394,
+      "created": 1596301096394,
+      "custom": {},
+      "fname": "journal.template.daily",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "8ff50b835f43228441d899bf157e12c6",
+      "links": [],
+      "anchors": {
+        "thoughts": {
+          "type": "header",
+          "text": "Thoughts",
+          "value": "thoughts",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "tasks": {
+          "type": "header",
+          "text": "Tasks",
+          "value": "tasks",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "3-things-im-grateful-for": {
+          "type": "header",
+          "text": "3 Things I'm Grateful For",
+          "value": "3-things-im-grateful-for",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "3-good-things-from-the-day": {
+          "type": "header",
+          "text": "3 Good Things from the day",
+          "value": "3-good-things-from-the-day",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "3g8kwwze72yssn0v6zl3lq7",
+      "data": {}
+    },
+    "7f4a78d9-41c7-4753-8714-d91bc9794897": {
+      "id": "7f4a78d9-41c7-4753-8714-d91bc9794897",
+      "title": "Daily",
+      "desc": "",
+      "updated": 1596303334733,
+      "created": 1596303334733,
+      "custom": {},
+      "fname": "journal.daily",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "0ef759c1078b376426efc9725aa9b7af",
+      "links": [],
+      "anchors": {
+        "daily-journals": {
+          "type": "header",
+          "text": "Daily Journals",
+          "value": "daily-journals",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "a44df307-1a67-417b-b733-da109c3be441",
+      "data": {}
+    },
+    "132fe0fe-fc74-4dbe-982a-9dcac677f664": {
+      "id": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "title": "Cli",
+      "desc": "",
+      "updated": 1609237593235,
+      "created": 1595953214294,
+      "custom": {},
+      "fname": "cli",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "0b5afe32d3ad261786dad8972280091a",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "af877716-9ab3-464e-a575-cde8d8ebbd8c",
+        "9ee14e63-98a6-4ac0-ba74-e7cea15966d8",
+        "349ad6c9-07ef-4606-860d-37d83bc76467",
+        "92b8f111-16ee-460f-82f5-8f84c46ffcc0",
+        "c435c385-eb67-42a3-815c-a1eccc285296",
+        "b8472372-5877-4c9f-9afd-375b56df18fe",
+        "691068f4-01bd-4415-80ea-4d24f869962e",
+        "fde0884c-1f69-404e-9906-7f44903cdfb4",
+        "79ff0322-976d-4f93-b5f1-f76fc9e39c75",
+        "yPSbfSUiv5mdVJHX2LaBF",
+        "070c81bd-10c7-4106-b57c-1a2691be1aeb",
+        "efc3885a-03cf-478f-9e3b-89b0c1810d72",
+        "69cc4b72-a98e-4133-8dcc-2b45d2456101",
+        "90bd478b-7a43-4919-a4df-d0882e332b7e",
+        "760405d2-be1b-478f-9002-9ec19f2fcd75",
+        "58bf3dc7-8c82-4553-afa0-e255f9285e93",
+        "e30182bb-dec6-4f35-b19e-400478c4e0a3",
+        "013cdd92-74f7-45a0-850a-446b0364efb4"
+      ],
+      "parent": "root",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "013cdd92-74f7-45a0-850a-446b0364efb4": {
+      "id": "013cdd92-74f7-45a0-850a-446b0364efb4",
+      "title": "Wsl",
+      "desc": "",
+      "updated": 1601825550232,
+      "created": 1601825550232,
+      "custom": {},
+      "fname": "cli.wsl",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "65d00dd749cc86ff9ddad6ddef7f62b8",
+      "links": [],
+      "anchors": {
+        "windows-subsystem-for-linux-wsl": {
+          "type": "header",
+          "text": "Windows Subsystem for Linux (WSL)",
+          "value": "windows-subsystem-for-linux-wsl",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "common-problems": {
+          "type": "header",
+          "text": "Common problems",
+          "value": "common-problems",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "ls-cannot-access-mntc-inputoutput-error": {
+          "type": "header",
+          "text": "ls: cannot access '/mnt/c': Input/output error",
+          "value": "ls-cannot-access-mntc-inputoutput-error",
+          "line": 11,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [
+        "c671e95d-c5ee-4567-90af-de3931accfd8"
+      ],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "c671e95d-c5ee-4567-90af-de3931accfd8": {
+      "id": "c671e95d-c5ee-4567-90af-de3931accfd8",
+      "title": "Alpine",
+      "desc": "",
+      "updated": 1613496927467,
+      "created": 1613387590453,
+      "custom": {},
+      "fname": "cli.wsl.alpine",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "0712ac5796f2b37051fb6ef17ecce27c",
+      "links": [],
+      "anchors": {
+        "alpine": {
+          "type": "header",
+          "text": "Alpine",
+          "value": "alpine",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "setup": {
+          "type": "header",
+          "text": "Setup",
+          "value": "setup",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "013cdd92-74f7-45a0-850a-446b0364efb4",
+      "data": {}
+    },
+    "e30182bb-dec6-4f35-b19e-400478c4e0a3": {
+      "id": "e30182bb-dec6-4f35-b19e-400478c4e0a3",
+      "title": "Vim",
+      "desc": "",
+      "updated": 1608553308906,
+      "created": 1603196018803,
+      "custom": {},
+      "fname": "cli.vim",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "d385034b23317d6b3d2224314f2834d0",
+      "links": [],
+      "anchors": {
+        "vim": {
+          "type": "header",
+          "text": "VIM",
+          "value": "vim",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "regex-replace": {
+          "type": "header",
+          "text": "Regex Replace",
+          "value": "regex-replace",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "navigation": {
+          "type": "header",
+          "text": "Navigation",
+          "value": "navigation",
+          "line": 24,
+          "column": 0,
+          "depth": 2
+        },
+        "moving-to-matching-braces": {
+          "type": "header",
+          "text": "Moving to matching braces",
+          "value": "moving-to-matching-braces",
+          "line": 25,
+          "column": 0,
+          "depth": 3
+        },
+        "pasting-verbatim": {
+          "type": "header",
+          "text": "Pasting verbatim",
+          "value": "pasting-verbatim",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "58bf3dc7-8c82-4553-afa0-e255f9285e93": {
+      "id": "58bf3dc7-8c82-4553-afa0-e255f9285e93",
+      "title": "Tr",
+      "desc": "",
+      "updated": 1618562158354,
+      "created": 1618559987536,
+      "custom": {},
+      "fname": "cli.tr",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "f4a14c78ff711b8def943b441588ffa8",
+      "links": [],
+      "anchors": {
+        "tr-bash-command-transform": {
+          "type": "header",
+          "text": "TR bash command (Transform)",
+          "value": "tr-bash-command-transform",
+          "line": 9,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "760405d2-be1b-478f-9002-9ec19f2fcd75": {
+      "id": "760405d2-be1b-478f-9002-9ec19f2fcd75",
+      "title": "Tmux",
+      "desc": "",
+      "updated": 1609924438892,
+      "created": 1609924416641,
+      "custom": {},
+      "fname": "cli.tmux",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "ca03b9cccb82cb7a052cc937ff19148b",
+      "links": [],
+      "anchors": {
+        "tmux": {
+          "type": "header",
+          "text": "Tmux",
+          "value": "tmux",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "enable-ctrl-keys-temp": {
+          "type": "header",
+          "text": "Enable CTRL keys temp",
+          "value": "enable-ctrl-keys-temp",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "90bd478b-7a43-4919-a4df-d0882e332b7e": {
+      "id": "90bd478b-7a43-4919-a4df-d0882e332b7e",
+      "title": "Tcpdump",
+      "desc": "",
+      "updated": 1603122336925,
+      "created": 1603122336925,
+      "custom": {},
+      "fname": "cli.tcpdump",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "928902e1aa24d0de930f40026ff28519",
+      "links": [],
+      "anchors": {
+        "tcpdump": {
+          "type": "header",
+          "text": "Tcpdump",
+          "value": "tcpdump",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "display-traffic-to-and-from-a-host": {
+          "type": "header",
+          "text": "Display traffic to and from a host",
+          "value": "display-traffic-to-and-from-a-host",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "69cc4b72-a98e-4133-8dcc-2b45d2456101": {
+      "id": "69cc4b72-a98e-4133-8dcc-2b45d2456101",
+      "title": "Tar",
+      "desc": null,
+      "updated": 1595952505022,
+      "created": 1652817063414,
+      "custom": {},
+      "fname": "cli.tar",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "6ae64a81e5f6bc29cc248807fd585230",
+      "links": [],
+      "anchors": {
+        "overview": {
+          "type": "header",
+          "text": "Overview",
+          "value": "overview",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "synopsis": {
+          "type": "header",
+          "text": "Synopsis",
+          "value": "synopsis",
+          "line": 13,
+          "column": 0,
+          "depth": 1
+        },
+        "options": {
+          "type": "header",
+          "text": "Options",
+          "value": "options",
+          "line": 17,
+          "column": 0,
+          "depth": 1
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 28,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "efc3885a-03cf-478f-9e3b-89b0c1810d72": {
+      "id": "efc3885a-03cf-478f-9e3b-89b0c1810d72",
+      "title": "Ssh",
+      "desc": "",
+      "updated": 1617287520353,
+      "created": 1599322339965,
+      "custom": {},
+      "fname": "cli.ssh",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "841d53987764d30e69efec6c7b5e61b6",
+      "links": [],
+      "anchors": {
+        "ssh": {
+          "type": "header",
+          "text": "SSH",
+          "value": "ssh",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "no-host-checking-and-suppress-ssh-messages": {
+          "type": "header",
+          "text": "No host checking and suppress SSH messages",
+          "value": "no-host-checking-and-suppress-ssh-messages",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "copying-ssh-key-to-remote-host": {
+          "type": "header",
+          "text": "Copying SSH key to remote-host",
+          "value": "copying-ssh-key-to-remote-host",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "copying-ssh-key-to-remote-host-powershell-one-liner": {
+          "type": "header",
+          "text": "Copying SSH key to remote-host (Powershell one-liner)",
+          "value": "copying-ssh-key-to-remote-host-powershell-one-liner",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "bad-owner-or-permission-on-cusersusersshconfig-domain_name-not-used": {
+          "type": "header",
+          "text": "Bad owner or permission on c:\\Users\\user/.ssh/config (domain_name not used)",
+          "value": "bad-owner-or-permission-on-cusersusersshconfig-domain_name-not-used",
+          "line": 24,
+          "column": 0,
+          "depth": 2
+        },
+        "generating-ssh-keys": {
+          "type": "header",
+          "text": "Generating SSH keys",
+          "value": "generating-ssh-keys",
+          "line": 28,
+          "column": 0,
+          "depth": 2
+        },
+        "check-for-existing-keys": {
+          "type": "header",
+          "text": "Check for existing keys",
+          "value": "check-for-existing-keys",
+          "line": 29,
+          "column": 0,
+          "depth": 3
+        },
+        "generate-new-ssh-key": {
+          "type": "header",
+          "text": "Generate new SSH key",
+          "value": "generate-new-ssh-key",
+          "line": 40,
+          "column": 0,
+          "depth": 3
+        },
+        "add-ssh-key-to-ssh-agent": {
+          "type": "header",
+          "text": "Add SSH key to ssh-agent",
+          "value": "add-ssh-key-to-ssh-agent",
+          "line": 50,
+          "column": 0,
+          "depth": 3
+        },
+        "add-ssh-key-to-github": {
+          "type": "header",
+          "text": "Add SSH key to GitHub",
+          "value": "add-ssh-key-to-github",
+          "line": 58,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "070c81bd-10c7-4106-b57c-1a2691be1aeb": {
+      "id": "070c81bd-10c7-4106-b57c-1a2691be1aeb",
+      "title": "Ps",
+      "desc": "",
+      "updated": 1618821259957,
+      "created": 1616503302967,
+      "custom": {},
+      "fname": "cli.ps",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "f784613996165e09eff86efd7e621823",
+      "links": [],
+      "anchors": {
+        "powershell": {
+          "type": "header",
+          "text": "Powershell",
+          "value": "powershell",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "list-services": {
+          "type": "header",
+          "text": "List services",
+          "value": "list-services",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "get-diskspace": {
+          "type": "header",
+          "text": "Get Diskspace",
+          "value": "get-diskspace",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "find-pid-of-service": {
+          "type": "header",
+          "text": "Find PID of service",
+          "value": "find-pid-of-service",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "yPSbfSUiv5mdVJHX2LaBF": {
+      "id": "yPSbfSUiv5mdVJHX2LaBF",
+      "title": "Iptables",
+      "desc": "",
+      "updated": 1624740148102,
+      "created": 1624732067440,
+      "custom": {},
+      "fname": "cli.iptables",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "8dbb813d733ef7ad6420b9ff78d6d7d7",
+      "links": [],
+      "anchors": {
+        "overview": {
+          "type": "header",
+          "text": "Overview",
+          "value": "overview",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "synopsis": {
+          "type": "header",
+          "text": "Synopsis",
+          "value": "synopsis",
+          "line": 11,
+          "column": 0,
+          "depth": 1
+        },
+        "options": {
+          "type": "header",
+          "text": "Options",
+          "value": "options",
+          "line": 16,
+          "column": 0,
+          "depth": 1
+        },
+        "flags": {
+          "type": "header",
+          "text": "Flags",
+          "value": "flags",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "tables": {
+          "type": "header",
+          "text": "Tables",
+          "value": "tables",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 51,
+          "column": 0,
+          "depth": 1
+        },
+        "other-notes": {
+          "type": "header",
+          "text": "Other Notes",
+          "value": "other-notes",
+          "line": 79,
+          "column": 0,
+          "depth": 1
+        },
+        "ip-forwarding": {
+          "type": "header",
+          "text": "IP Forwarding",
+          "value": "ip-forwarding",
+          "line": 81,
+          "column": 0,
+          "depth": 2
+        },
+        "check-if-ip-forwarding-is-enabled": {
+          "type": "header",
+          "text": "Check if IP forwarding is enabled",
+          "value": "check-if-ip-forwarding-is-enabled",
+          "line": 84,
+          "column": 0,
+          "depth": 3
+        },
+        "enable-ip-forwarding": {
+          "type": "header",
+          "text": "Enable IP forwarding",
+          "value": "enable-ip-forwarding",
+          "line": 94,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "79ff0322-976d-4f93-b5f1-f76fc9e39c75": {
+      "id": "79ff0322-976d-4f93-b5f1-f76fc9e39c75",
+      "title": "Grep",
+      "desc": "",
+      "updated": 1609237875468,
+      "created": 1609237858255,
+      "custom": {},
+      "fname": "cli.grep",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "05774fbf2266cfbc1dd9e33542f4cf37",
+      "links": [],
+      "anchors": {
+        "grep": {
+          "type": "header",
+          "text": "Grep",
+          "value": "grep",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "advanced-perl-patterns": {
+          "type": "header",
+          "text": "Advanced Perl Patterns",
+          "value": "advanced-perl-patterns",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "fde0884c-1f69-404e-9906-7f44903cdfb4": {
+      "id": "fde0884c-1f69-404e-9906-7f44903cdfb4",
+      "title": "Git",
+      "desc": null,
+      "updated": 1613950849582,
+      "created": 1613950849582,
+      "custom": {},
+      "fname": "cli.git",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "1d4d47ca19c2346673039efa672953dc",
+      "links": [],
+      "anchors": {
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "d0d5e5fb-fd00-4d0f-90a6-dbf3158497de"
+      ],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "d0d5e5fb-fd00-4d0f-90a6-dbf3158497de": {
+      "id": "d0d5e5fb-fd00-4d0f-90a6-dbf3158497de",
+      "title": "Env",
+      "desc": "variables relevant for command",
+      "updated": 1599319533298,
+      "created": 1599319533298,
+      "custom": {},
+      "fname": "cli.git.env",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "be2e27bdea0a6aea337ba1fd737b3b93",
+      "links": [],
+      "anchors": {
+        "git-environment": {
+          "type": "header",
+          "text": "Git Environment",
+          "value": "git-environment",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "gitignore-file": {
+          "type": "header",
+          "text": "gitignore file",
+          "value": "gitignore-file",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "example-gitignore": {
+          "type": "header",
+          "text": "example .gitignore",
+          "value": "example-gitignore",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "fde0884c-1f69-404e-9906-7f44903cdfb4",
+      "data": {}
+    },
+    "691068f4-01bd-4415-80ea-4d24f869962e": {
+      "id": "691068f4-01bd-4415-80ea-4d24f869962e",
+      "title": "Find",
+      "desc": "",
+      "updated": 1620372934052,
+      "created": 1620372910905,
+      "custom": {},
+      "fname": "cli.find",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "c945a712101d702fbafd4897dd1a1caa",
+      "links": [],
+      "anchors": {
+        "find": {
+          "type": "header",
+          "text": "Find",
+          "value": "find",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "recursively-find-all-files-with-name": {
+          "type": "header",
+          "text": "Recursively find all files with name",
+          "value": "recursively-find-all-files-with-name",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "b8472372-5877-4c9f-9afd-375b56df18fe": {
+      "id": "b8472372-5877-4c9f-9afd-375b56df18fe",
+      "title": "Dig",
+      "desc": "",
+      "updated": 1609277201450,
+      "created": 1595952505021,
+      "custom": {},
+      "fname": "cli.dig",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "fd80864a8f87c12acb0018c0d311d1c7",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "cli.dig",
+            "id": "b8472372-5877-4c9f-9afd-375b56df18fe",
+            "vaultName": "vault"
+          },
+          "value": "user.8.8.8.8",
+          "alias": "@8.8.8.8",
+          "position": {
+            "start": {
+              "line": 71,
+              "column": 5,
+              "offset": 1825
+            },
+            "end": {
+              "line": 71,
+              "column": 13,
+              "offset": 1833
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.8.8.8.8"
+          }
+        }
+      ],
+      "anchors": {
+        "overview": {
+          "type": "header",
+          "text": "Overview",
+          "value": "overview",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "synopsis": {
+          "type": "header",
+          "text": "Synopsis",
+          "value": "synopsis",
+          "line": 15,
+          "column": 0,
+          "depth": 1
+        },
+        "options": {
+          "type": "header",
+          "text": "Options",
+          "value": "options",
+          "line": 21,
+          "column": 0,
+          "depth": 1
+        },
+        "example": {
+          "type": "header",
+          "text": "Example",
+          "value": "example",
+          "line": 31,
+          "column": 0,
+          "depth": 1
+        },
+        "trace": {
+          "type": "header",
+          "text": "Trace",
+          "value": "trace",
+          "line": 61,
+          "column": 0,
+          "depth": 3
+        },
+        "cook": {
+          "type": "header",
+          "text": "Cook",
+          "value": "cook",
+          "line": 73,
+          "column": 0,
+          "depth": 1
+        },
+        "specify-dns-server": {
+          "type": "header",
+          "text": "Specify dns server",
+          "value": "specify-dns-server",
+          "line": 75,
+          "column": 0,
+          "depth": 3
+        },
+        "look-for-name-server": {
+          "type": "header",
+          "text": "Look for name server",
+          "value": "look-for-name-server",
+          "line": 79,
+          "column": 0,
+          "depth": 3
+        },
+        "faq": {
+          "type": "header",
+          "text": "FAQ",
+          "value": "faq",
+          "line": 84,
+          "column": 0,
+          "depth": 1
+        },
+        "how-does-dig-trace-work": {
+          "type": "header",
+          "text": "How does dig +trace work",
+          "value": "how-does-dig-trace-work",
+          "line": 86,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "c435c385-eb67-42a3-815c-a1eccc285296": {
+      "id": "c435c385-eb67-42a3-815c-a1eccc285296",
+      "title": "Curl",
+      "desc": "",
+      "updated": 1624538684247,
+      "created": 1595952505020,
+      "custom": {},
+      "fname": "cli.curl",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "e2cbd739d74116f4e4da12bcc55d02ce",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "cli.curl",
+            "id": "c435c385-eb67-42a3-815c-a1eccc285296",
+            "vaultName": "vault"
+          },
+          "value": "user.default",
+          "alias": "@default",
+          "position": {
+            "start": {
+              "line": 43,
+              "column": 7,
+              "offset": 777
+            },
+            "end": {
+              "line": 43,
+              "column": 15,
+              "offset": 785
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.default"
+          }
+        }
+      ],
+      "anchors": {
+        "overview": {
+          "type": "header",
+          "text": "Overview",
+          "value": "overview",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "synopsis": {
+          "type": "header",
+          "text": "Synopsis",
+          "value": "synopsis",
+          "line": 11,
+          "column": 0,
+          "depth": 1
+        },
+        "options": {
+          "type": "header",
+          "text": "Options",
+          "value": "options",
+          "line": 16,
+          "column": 0,
+          "depth": 1
+        },
+        "request": {
+          "type": "header",
+          "text": "Request",
+          "value": "request",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "security": {
+          "type": "header",
+          "text": "Security",
+          "value": "security",
+          "line": 64,
+          "column": 0,
+          "depth": 2
+        },
+        "output": {
+          "type": "header",
+          "text": "Output",
+          "value": "output",
+          "line": 76,
+          "column": 0,
+          "depth": 2
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 100,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "92b8f111-16ee-460f-82f5-8f84c46ffcc0": {
+      "id": "92b8f111-16ee-460f-82f5-8f84c46ffcc0",
+      "title": "Column",
+      "desc": "",
+      "updated": 1609277308072,
+      "created": 1599590418255,
+      "custom": {},
+      "fname": "cli.column",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "b1502e54d81bb71b57212e39998dc250",
+      "links": [],
+      "anchors": {
+        "column": {
+          "type": "header",
+          "text": "Column",
+          "value": "column",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "flags": {
+          "type": "header",
+          "text": "Flags",
+          "value": "flags",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "349ad6c9-07ef-4606-860d-37d83bc76467": {
+      "id": "349ad6c9-07ef-4606-860d-37d83bc76467",
+      "title": "Cmd",
+      "desc": "",
+      "updated": 1621416146469,
+      "created": 1621415282020,
+      "custom": {},
+      "fname": "cli.cmd",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "cbdc0927c7e340a31c7aa0b33ffe16d8",
+      "links": [],
+      "anchors": {
+        "commands-to-use-in-windows-cmd": {
+          "type": "header",
+          "text": "Commands to use in Windows CMD",
+          "value": "commands-to-use-in-windows-cmd",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "curl": {
+          "type": "header",
+          "text": "curl",
+          "value": "curl",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "9ee14e63-98a6-4ac0-ba74-e7cea15966d8": {
+      "id": "9ee14e63-98a6-4ac0-ba74-e7cea15966d8",
+      "title": "Chkconfig",
+      "desc": "",
+      "updated": 1623230342396,
+      "created": 1623228439638,
+      "custom": {},
+      "fname": "cli.chkconfig",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "7516079efbcd4dbfa71a2850c7dbcf79",
+      "links": [],
+      "anchors": {
+        "chkconfig": {
+          "type": "header",
+          "text": "chkconfig",
+          "value": "chkconfig",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "af877716-9ab3-464e-a575-cde8d8ebbd8c": {
+      "id": "af877716-9ab3-464e-a575-cde8d8ebbd8c",
+      "title": "Awk",
+      "desc": "",
+      "updated": 1624981451424,
+      "created": 1609237754433,
+      "custom": {},
+      "fname": "cli.awk",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "97be987b41d4ee1ac586aa9fb6b9567e",
+      "links": [],
+      "anchors": {
+        "awk": {
+          "type": "header",
+          "text": "AWK",
+          "value": "awk",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "sum-up-lines": {
+          "type": "header",
+          "text": "Sum up lines",
+          "value": "sum-up-lines",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "sort-by-line-length": {
+          "type": "header",
+          "text": "Sort by line length",
+          "value": "sort-by-line-length",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "print-line-length": {
+          "type": "header",
+          "text": "print line length",
+          "value": "print-line-length",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "average-of-lines": {
+          "type": "header",
+          "text": "Average of lines",
+          "value": "average-of-lines",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "data": {},
+      "schema": {
+        "schemaId": "cli",
+        "moduleId": "cli"
+      }
+    },
+    "ced683be-fe67-4022-989f-abc6d311cb3a": {
+      "id": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "title": "App",
+      "desc": "",
+      "updated": 1599412606716,
+      "created": 1599412606716,
+      "custom": {},
+      "fname": "app",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "a338855d37c643f1d4a3e792eed82c31",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "3bfa34fc-5a50-4d06-928a-30c2ce6afbc1",
+        "ynvyojd8rxo87nwy7gxj3ea",
+        "25210a99-0d6a-4df6-af95-8ed2835f1063",
+        "97d883eb-b758-4420-b402-8dada7e105bf",
+        "e363cde0-76cb-4f3b-91c9-7709ebbbc04f",
+        "19b67356-8767-4a7e-bb63-9176afa9f1f2",
+        "b25f543e-1cbd-45c1-814d-2d245f4a12c5",
+        "502bf670-56f4-41ef-ab3b-5b05703bd407",
+        "792ced21-aea6-42c6-ac34-c4e613bbb374"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "792ced21-aea6-42c6-ac34-c4e613bbb374": {
+      "id": "792ced21-aea6-42c6-ac34-c4e613bbb374",
+      "title": "Wireguard",
+      "desc": "",
+      "updated": 1614451360150,
+      "created": 1613812652776,
+      "custom": {},
+      "fname": "app.wireguard",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "861f989065805e211bacc852cc3c2b49",
+      "links": [],
+      "anchors": {
+        "wireguard": {
+          "type": "header",
+          "text": "Wireguard",
+          "value": "wireguard",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "possible-pre-req": {
+          "type": "header",
+          "text": "Possible pre-req",
+          "value": "possible-pre-req",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "running-with-docker": {
+          "type": "header",
+          "text": "Running with Docker",
+          "value": "running-with-docker",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "output": {
+          "type": "header",
+          "text": "Output",
+          "value": "output",
+          "line": 62,
+          "column": 0,
+          "depth": 2
+        },
+        "mtu-fixes": {
+          "type": "header",
+          "text": "MTU fixes",
+          "value": "mtu-fixes",
+          "line": 67,
+          "column": 0,
+          "depth": 2
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 78,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "502bf670-56f4-41ef-ab3b-5b05703bd407": {
+      "id": "502bf670-56f4-41ef-ab3b-5b05703bd407",
+      "title": "Tautulli",
+      "desc": "",
+      "updated": 1613464001557,
+      "created": 1613463997632,
+      "custom": {},
+      "fname": "app.tautulli",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "4aeff037f2f0a04b103cb031004387b6",
+      "links": [],
+      "anchors": {
+        "tautulli": {
+          "type": "header",
+          "text": "Tautulli",
+          "value": "tautulli",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "running-using-docker": {
+          "type": "header",
+          "text": "Running using Docker",
+          "value": "running-using-docker",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "updating-with-docker": {
+          "type": "header",
+          "text": "Updating with docker",
+          "value": "updating-with-docker",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "b25f543e-1cbd-45c1-814d-2d245f4a12c5": {
+      "id": "b25f543e-1cbd-45c1-814d-2d245f4a12c5",
+      "title": "Portainer",
+      "desc": "",
+      "updated": 1634663059678,
+      "created": 1613837966053,
+      "custom": {},
+      "fname": "app.portainer",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "8abb997519ac50f2ee63584c77343682",
+      "links": [],
+      "anchors": {
+        "portainer": {
+          "type": "header",
+          "text": "Portainer",
+          "value": "portainer",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "runing-in-docker": {
+          "type": "header",
+          "text": "Runing in Docker",
+          "value": "runing-in-docker",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "19b67356-8767-4a7e-bb63-9176afa9f1f2": {
+      "id": "19b67356-8767-4a7e-bb63-9176afa9f1f2",
+      "title": "Plexmediaserver",
+      "desc": "",
+      "updated": 1636054762895,
+      "created": 1599322955852,
+      "custom": {},
+      "fname": "app.plex",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "01c8c24836a38de1714268d5404407cf",
+      "links": [],
+      "anchors": {
+        "plexmediaserver": {
+          "type": "header",
+          "text": "Plexmediaserver",
+          "value": "plexmediaserver",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "plex_home-location": {
+          "type": "header",
+          "text": "$PLEX_HOME Location",
+          "value": "plex_home-location",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "move-the-installation": {
+          "type": "header",
+          "text": "Move the installation",
+          "value": "move-the-installation",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "repair-a-corrupt-database": {
+          "type": "header",
+          "text": "Repair a Corrupt Database",
+          "value": "repair-a-corrupt-database",
+          "line": 41,
+          "column": 0,
+          "depth": 2
+        },
+        "docker-install": {
+          "type": "header",
+          "text": "Docker install",
+          "value": "docker-install",
+          "line": 47,
+          "column": 0,
+          "depth": 2
+        },
+        "support": {
+          "type": "header",
+          "text": "Support",
+          "value": "support",
+          "line": 61,
+          "column": 0,
+          "depth": 3
+        },
+        "error-update-libseccomp2": {
+          "type": "header",
+          "text": "Error update libseccomp2",
+          "value": "error-update-libseccomp2",
+          "line": 76,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "e363cde0-76cb-4f3b-91c9-7709ebbbc04f": {
+      "id": "e363cde0-76cb-4f3b-91c9-7709ebbbc04f",
+      "title": "Pihole",
+      "desc": "",
+      "updated": 1614422739147,
+      "created": 1613900690739,
+      "custom": {},
+      "fname": "app.pihole",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "35478ac467e678bb22be94ab89388d5a",
+      "links": [],
+      "anchors": {
+        "pihole": {
+          "type": "header",
+          "text": "PiHole",
+          "value": "pihole",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "running-in-docker": {
+          "type": "header",
+          "text": "Running in Docker",
+          "value": "running-in-docker",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "solve-dns-resolution-in-other-containers-when-using-pihole-in-docker": {
+          "type": "header",
+          "text": "Solve DNS resolution in other containers when using PiHole in Docker",
+          "value": "solve-dns-resolution-in-other-containers-when-using-pihole-in-docker",
+          "line": 52,
+          "column": 0,
+          "depth": 2
+        },
+        "adding-custom-dns-entries": {
+          "type": "header",
+          "text": "Adding custom DNS entries",
+          "value": "adding-custom-dns-entries",
+          "line": 58,
+          "column": 0,
+          "depth": 2
+        },
+        "whitelist-the-following-on-this-url": {
+          "type": "header",
+          "text": "Whitelist the following on this URL",
+          "value": "whitelist-the-following-on-this-url",
+          "line": 68,
+          "column": 0,
+          "depth": 2
+        },
+        "blacklist-the-following-optional": {
+          "type": "header",
+          "text": "Blacklist the following (optional)",
+          "value": "blacklist-the-following-optional",
+          "line": 71,
+          "column": 0,
+          "depth": 2
+        },
+        "seeing-lots-of-queries-for-lb_dns-sd_udpip_addressin-addrarpa": {
+          "type": "header",
+          "text": "Seeing lots of queries for lb._dns-sd._udp.<IP_ADDRESS>.in-addr.arpa",
+          "value": "seeing-lots-of-queries-for-lb_dns-sd_udpip_addressin-addrarpa",
+          "line": 78,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "97d883eb-b758-4420-b402-8dada7e105bf": {
+      "id": "97d883eb-b758-4420-b402-8dada7e105bf",
+      "title": "Luci",
+      "desc": "",
+      "updated": 1614415847255,
+      "created": 1614415830859,
+      "custom": {},
+      "fname": "app.luci",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "f76eb99caea54854ab4429fcc9eda39a",
+      "links": [],
+      "anchors": {
+        "luci": {
+          "type": "header",
+          "text": "LuCI",
+          "value": "luci",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "25210a99-0d6a-4df6-af95-8ed2835f1063": {
+      "id": "25210a99-0d6a-4df6-af95-8ed2835f1063",
+      "title": "Kitana",
+      "desc": "",
+      "updated": 1624538644094,
+      "created": 1619952139691,
+      "custom": {},
+      "fname": "app.kitana",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "4ed5b5f163a7f9e9397a61110697f860",
+      "links": [],
+      "anchors": {
+        "kitana": {
+          "type": "header",
+          "text": "Kitana",
+          "value": "kitana",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "install-with-docker": {
+          "type": "header",
+          "text": "install with Docker",
+          "value": "install-with-docker",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "ynvyojd8rxo87nwy7gxj3ea": {
+      "id": "ynvyojd8rxo87nwy7gxj3ea",
+      "title": "Grocy",
+      "desc": "",
+      "updated": 1652817063128,
+      "created": "2022-01-19T21:19:17.000Z",
+      "modified": "2022-01-19T21:52:45.000Z",
+      "custom": {
+        "modified": "2022-01-19T21:52:45.000Z"
+      },
+      "fname": "app.grocy",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "5be643276a11b9cc98da8d7928e87374",
+      "links": [],
+      "anchors": {
+        "grocy": {
+          "type": "header",
+          "text": "Grocy",
+          "value": "grocy",
+          "line": 9,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    },
+    "3bfa34fc-5a50-4d06-928a-30c2ce6afbc1": {
+      "id": "3bfa34fc-5a50-4d06-928a-30c2ce6afbc1",
+      "title": "Dendron",
+      "desc": "",
+      "updated": 1652904161681,
+      "created": 1614090590691,
+      "custom": {},
+      "fname": "app.dendron",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "b67f359c3762d509149c64701114f757",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "app.dendron",
+            "id": "3bfa34fc-5a50-4d06-928a-30c2ce6afbc1",
+            "vaultName": "vault"
+          },
+          "value": "https://wiki.dendron.so/notes/o4i7a81j778jyh7wql0nacb/",
+          "alias": "Reference",
+          "position": {
+            "start": {
+              "line": 17,
+              "column": 3,
+              "offset": 299
+            },
+            "end": {
+              "line": 17,
+              "column": 73,
+              "offset": 369
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "https://wiki.dendron.so/notes/o4i7a81j778jyh7wql0nacb/"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "app.dendron",
+            "id": "3bfa34fc-5a50-4d06-928a-30c2ce6afbc1",
+            "vaultName": "vault"
+          },
+          "value": "https://wiki.dendron.so/notes/aikv0yamnfkcowlol7qeldy/",
+          "alias": "Migrating to Self Contained Vaults",
+          "position": {
+            "start": {
+              "line": 18,
+              "column": 3,
+              "offset": 372
+            },
+            "end": {
+              "line": 18,
+              "column": 98,
+              "offset": 467
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "https://wiki.dendron.so/notes/aikv0yamnfkcowlol7qeldy/"
+          }
+        }
+      ],
+      "anchors": {
+        "dendron": {
+          "type": "header",
+          "text": "Dendron",
+          "value": "dendron",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "line-wrap-for-code-blocks": {
+          "type": "header",
+          "text": "Line wrap for code blocks",
+          "value": "line-wrap-for-code-blocks",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "self-contained-vaults": {
+          "type": "header",
+          "text": "Self Contained Vaults",
+          "value": "self-contained-vaults",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        },
+        "features": {
+          "type": "header",
+          "text": "Features",
+          "value": "features",
+          "line": 25,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "root",
+      "title": "root",
+      "desc": "",
+      "updated": 1595961348801,
+      "created": 1595961348801,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "name": "vault",
+        "selfContained": true
+      },
+      "contentHash": "dad9815845eec627c937e34281a065d5",
+      "links": [],
+      "anchors": {
+        "root": {
+          "type": "header",
+          "text": "Root",
+          "value": "root",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "ced683be-fe67-4022-989f-abc6d311cb3a",
+        "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+        "a44df307-1a67-417b-b733-da109c3be441",
+        "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+        "93a5dc42-8663-4d3c-924f-82e8faa35a67",
+        "f80d45a1-bd90-4097-96bc-0301fbc4d937",
+        "19992660-3602-4c64-a3a5-e9c05f19ffac",
+        "3f157f98-5c61-4479-b311-956d4b0ef67a"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "\n# Root\n\nThis is the root fo your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. \n"
+    }
+  ],
+  "noteIndex": {
+    "id": "root",
+    "title": "root",
+    "desc": "",
+    "updated": 1595961348801,
+    "created": 1595961348801,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "name": "vault",
+      "selfContained": true
+    },
+    "contentHash": "dad9815845eec627c937e34281a065d5",
+    "links": [],
+    "anchors": {
+      "root": {
+        "type": "header",
+        "text": "Root",
+        "value": "root",
+        "line": 8,
+        "column": 0,
+        "depth": 1
+      }
+    },
+    "children": [
+      "ced683be-fe67-4022-989f-abc6d311cb3a",
+      "132fe0fe-fc74-4dbe-982a-9dcac677f664",
+      "a44df307-1a67-417b-b733-da109c3be441",
+      "b9686e84-d9a1-4dbb-8474-1a9c156d6d12",
+      "93a5dc42-8663-4d3c-924f-82e8faa35a67",
+      "f80d45a1-bd90-4097-96bc-0301fbc4d937",
+      "19992660-3602-4c64-a3a5-e9c05f19ffac",
+      "3f157f98-5c61-4479-b311-956d4b0ef67a"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "\n# Root\n\nThis is the root fo your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. \n"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "name": "vault",
+      "selfContained": true
+    }
+  ]
+}

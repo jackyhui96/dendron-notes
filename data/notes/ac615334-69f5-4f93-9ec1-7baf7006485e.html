@@ -1,0 +1,36 @@
+<h1 id="test"><a aria-hidden="true" class="anchor-heading" href="#test"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Test</h1>
+<h1 id="erlang-tests"><a aria-hidden="true" class="anchor-heading" href="#erlang-tests"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Erlang Tests</h1>
+<h2 id="ct-suites"><a aria-hidden="true" class="anchor-heading" href="#ct-suites"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CT Suites</h2>
+<pre><code>Run a single CT test which is defined in a group
+    - make ct-http t=http_compress:headers_dupe
+
+Run a single CT test if there are no groups
+    - make ct-http c=headers_dupe
+</code></pre>
+<h2 id="eunit"><a aria-hidden="true" class="anchor-heading" href="#eunit"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>EUnit</h2>
+<h2 id="test-tips"><a aria-hidden="true" class="anchor-heading" href="#test-tips"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Test Tips</h2>
+<p><a href="https://medium.com/erlang-battleground/the-missing-testing-tip-628686ebbbda">https://medium.com/erlang-battleground/the-missing-testing-tip-628686ebbbda</a></p>
+<h2 id="config"><a aria-hidden="true" class="anchor-heading" href="#config"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Config</h2>
+<p>Test if valid erlang config</p>
+<pre class="language-sh"><code class="language-sh">
+find target -type f -name "*sys.config"  | \
+ls _rel/config/dte_web_com/dte/releases/config/*.config | erl -noshell -eval '
+    Input = list_to_binary(io:get_chars("", 1000000)),
+    Files = binary:split(Input, [&#x3C;&#x3C;"\n">>, &#x3C;&#x3C;" ">>], [global, trim_all]),
+    io:format("Testing File ~p~n",[Files]),
+    CheckFun = 
+        fun(FileName) ->
+            case file:consult(FileName) of
+                {ok,_} ->
+                    io:format("Erlang config '~p' - OK~n",[FileName]);
+                {error, {Line, _Mod, Reason}} ->
+                    io:format("Unable to parse ~p at line ~p with reason ~p~nINVALID CONFIG~n", [FileName, Line, Reason]),
+                    halt(1);
+                _ ->
+                    io:format("Unable to parse ~p ~nINVALID CONFIG~n", [FileName]),
+                    halt(1)
+            end
+        end,
+    [CheckFun(File) || File &#x3C;- Files]
+' -eval 'init:stop()'
+</code></pre>

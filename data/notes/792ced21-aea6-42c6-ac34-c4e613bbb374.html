@@ -1,0 +1,64 @@
+<h1 id="wireguard"><a aria-hidden="true" class="anchor-heading" href="#wireguard"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Wireguard</h1>
+<h1 id="wireguard-1"><a aria-hidden="true" class="anchor-heading" href="#wireguard-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Wireguard</h1>
+<h2 id="possible-pre-req"><a aria-hidden="true" class="anchor-heading" href="#possible-pre-req"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Possible pre-req</h2>
+<p>After getting a vague error which said <code>Kernel headers not available, sleeping now</code>, the following possible solution is below</p>
+<pre class="language-sh"><code class="language-sh">## Not sure if the below fixed it or not but this was run first
+sudo apt install --reinstall libraspberrypi0 libraspberrypi-{bin,dev,doc} raspberrypi-bootloader raspberrypi-kernel
+
+## Running the below and restarting fixed the issue 
+sudo apt update &#x26;&#x26; sudo apt upgrade -y
+
+</code></pre>
+<h2 id="running-with-docker"><a aria-hidden="true" class="anchor-heading" href="#running-with-docker"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Running with Docker</h2>
+<pre class="language-sh"><code class="language-sh">docker run -d \
+--name=wireguard \
+--cap-add=NET_ADMIN \
+--cap-add=SYS_MODULE \
+-e PUID=1000 \
+-e PGID=1000 \
+-e TZ=[YOURTZ] \
+-e SERVERURL=[YOURIP] \
+-e SERVERPORT=51820 \
+-e PEERS=[PEERS] \
+-e PEERDNS=auto \
+-e INTERNAL_SUBNET=10.13.13.0 \
+-p 51820:51820/udp \
+-v [VOLUME]:/config \
+-v /lib/modules:/lib/modules \
+--restart unless-stopped \
+linuxserver/wireguard
+
+## e.g.
+
+docker run -d \
+--name=wireguard \
+--cap-add=NET_ADMIN \
+--cap-add=SYS_MODULE \
+-e PUID=1000 \
+-e PGID=1000 \
+-e TZ=Europe/London \
+-e SERVERURL=xujunjie-pi.hopto.org \
+-e SERVERPORT=51820 \
+-e PEERS=3 \
+-e PEERDNS=192.168.208.102 \
+-e INTERNAL_SUBNET=10.13.13.0 \
+-p 51820:51820/udp \
+-v /usr/local/docker_apps/wireguard/config:/config \
+-v /lib/modules:/lib/modules \
+--restart unless-stopped \
+linuxserver/wireguard
+</code></pre>
+<h2 id="output"><a aria-hidden="true" class="anchor-heading" href="#output"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Output</h2>
+<p>After you execute the docker run command, the container will install the required kernel headers for your operating system to be able to effectively run Wireguard. Depending on your system this process could take a few minutes.</p>
+<p>After the container setup process is completed, the terminal will display QR codes. Do not close your window, you will need to scan these QR codes later. You can scan these QR codes with the mobile applications to instantly create the Wireguard profile on your mobile devices. The QR codes are the easiest and quickest way to get Wireguard up and running on your mobile devices.</p>
+<h2 id="mtu-fixes"><a aria-hidden="true" class="anchor-heading" href="#mtu-fixes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>MTU fixes</h2>
+<pre class="language-sh"><code class="language-sh">## Add the below to the PostUp section of the server config
+iptables -A FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+
+## Add the below to the PostDown section of the server config
+iptables -D FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+</code></pre>
+<p><em>Reference: <a href="https://keremerkan.net/posts/wireguard-mtu-fixes/">https://keremerkan.net/posts/wireguard-mtu-fixes/</a></em></p>
+<h2 id="references"><a aria-hidden="true" class="anchor-heading" href="#references"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>References</h2>
+<p><em><a href="https://codeopolis.com/posts/installing-wireguard-in-docker/">https://codeopolis.com/posts/installing-wireguard-in-docker/</a></em>
+<em><a href="https://github.com/linuxserver/docker-wireguard">https://github.com/linuxserver/docker-wireguard</a></em></p>

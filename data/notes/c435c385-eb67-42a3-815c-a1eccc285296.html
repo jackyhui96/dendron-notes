@@ -1,0 +1,149 @@
+<h1 id="curl"><a aria-hidden="true" class="anchor-heading" href="#curl"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Curl</h1>
+<h1 id="overview"><a aria-hidden="true" class="anchor-heading" href="#overview"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Overview</h1>
+<ul>
+<li>command line url reference</li>
+</ul>
+<h1 id="synopsis"><a aria-hidden="true" class="anchor-heading" href="#synopsis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Synopsis</h1>
+<pre><code>curl &#x3C;url|ip>:[port]
+</code></pre>
+<h1 id="options"><a aria-hidden="true" class="anchor-heading" href="#options"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Options</h1>
+<h2 id="request"><a aria-hidden="true" class="anchor-heading" href="#request"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Request</h2>
+<ul>
+<li>
+<p>-f | --fail: fail silently on server error</p>
+</li>
+<li>
+<p>-A | --user-agent <agent string="">
+eg: "Mozilla/4.0"</agent></p>
+</li>
+<li>
+<p>-c | --cookie-jar <filename></filename></p>
+<ul>
+<li>where to keep the cookie jar</li>
+</ul>
+</li>
+<li>
+<p>-H | --header </p><header><p></p>
+<ul>
+<li>set custom headers. This option can be invoked multiple times</li>
+</ul>
+</header></li>
+<li>
+<p>-L | --location
+Follow relocation headers</p>
+</li>
+<li>
+<p>-: | --location
+Follow 300 redirects</p>
+</li>
+<li>
+<p>-X | --request <cmd></cmd></p>
+<ul>
+<li>what type of request to send</li>
+</ul>
+</li>
+<li>
+<p>--referer: where did request come from
+eg: --referer <a href="http://curl.haxx.se">http://curl.haxx.se</a> <a href="http://daniel.haxx.se">http://daniel.haxx.se</a></p>
+</li>
+<li>
+<p>--no-sesionid
+No cache</p>
+<pre><code>  - G|--get
+</code></pre>
+</li>
+<li>
+<p>--keepalive-time <seconds></seconds></p>
+<ul>
+<li>how long connection is idle before sending keepalive probe</li>
+<li><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@default (Private)</a>: 60s</li>
+</ul>
+</li>
+<li>
+<p>-d | --data <data>
+Data to attach to the request</data></p>
+<ul>
+<li>send details with application/x-www-form-urlencoded. header</li>
+</ul>
+</li>
+<li>
+<p>-data-urlencode <data>
+Encodes data before sending it</data></p>
+</li>
+<li>
+<p>-F | --form &#x3C;name=content>
+Post request</p>
+<ul>
+<li>multipart/form-data
+eg.
+-F "name=daniel;type=text/foo"</li>
+</ul>
+</li>
+</ul>
+<h2 id="security"><a aria-hidden="true" class="anchor-heading" href="#security"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Security</h2>
+<ul>
+<li>
+<p>-k | --insecure
+Allows insecure SSL connection</p>
+</li>
+<li>
+<p>--crlfile: provide PEM file
+eg: --crlfile mycert.pem <a href="https://that.secure.server.com">https://that.secure.server.com</a></p>
+</li>
+<li>
+<p>-u | --user &#x3C;user:password></p>
+<ul>
+<li>user/password for auth</li>
+<li>default: auth is basic-auth</li>
+</ul>
+</li>
+</ul>
+<h2 id="output"><a aria-hidden="true" class="anchor-heading" href="#output"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Output</h2>
+<ul>
+<li>
+<p>-# | --progress-bar
+Show progress</p>
+</li>
+<li>
+<p>-I | --head
+only fetch headers</p>
+</li>
+<li>
+<p>-i | --include</p>
+<ul>
+<li>include http header in output</li>
+</ul>
+</li>
+<li>
+<p>-o | --output <file>
+Write to output</file></p>
+</li>
+<li>
+<p>-s | --silent
+No progress</p>
+</li>
+<li>
+<p>-w | --write-out <format> : what to write after successful request
+time_&#x3C;...>: time in seconds</format></p>
+</li>
+<li>
+<p>-S: show error message if fail</p>
+</li>
+<li>
+<p>--trace-ascii: store log of requests</p>
+</li>
+</ul>
+<h1 id="examples"><a aria-hidden="true" class="anchor-heading" href="#examples"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Examples</h1>
+<pre class="language-sh"><code class="language-sh"># get
+curl http://miigroups.com/forms?name="kevin"&#x26;press="OK"
+curl http://www.weridserver.com:8000/-> get website using port 8000
+
+# post
+# will use content type: application/x-www.form-urlencoded
+curl --data "name=kevin" http://www.miigroups.com/form
+curl --data-urlencode "name=kevin" http://www.miigroups.com/form
+curl --data "param1=value1&#x26;param2=value2" https://example.com/resource.cgi
+
+# urlencode a string
+date | curl -Gso /dev/null -w %{url_effective} --data-urlencode @- "" | sed -E 's/..(.*).../\1/'
+</code></pre>

@@ -1,0 +1,131 @@
+<h1 id="markdown"><a aria-hidden="true" class="anchor-heading" href="#markdown"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Markdown</h1>
+<h1 id="markdown-1"><a aria-hidden="true" class="anchor-heading" href="#markdown-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Markdown</h1>
+<h2 id="syntax"><a aria-hidden="true" class="anchor-heading" href="#syntax"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Syntax</h2>
+<h3 id="phrase-emphasis"><a aria-hidden="true" class="anchor-heading" href="#phrase-emphasis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Phrase emphasis</h3>
+<p><code>*italic* and **bold**</code>
+<em>italic</em> and <strong>bold</strong></p>
+<hr>
+<h3 id="links"><a aria-hidden="true" class="anchor-heading" href="#links"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Links</h3>
+<p><strong>Inline</strong> (titles are options):
+<code>Some [linked text](http://squarespace.com/ "Title").</code>
+Some <a href="http://squarespace.com/" title="Title">linked text</a>.</p>
+<hr>
+<h3 id="superscript-and-subscript"><a aria-hidden="true" class="anchor-heading" href="#superscript-and-subscript"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Superscript and subscript</h3>
+<p><strong>Superscript</strong>
+<code>E=MC&#x3C;sup>2&#x3C;/sup></code>
+E=MC<sup>2</sup></p>
+<p><strong>Subscript</strong>
+<code>Plants need CO&#x3C;sub>2&#x3C;/sub></code>
+Plants need CO<sub>2</sub></p>
+<hr>
+<h3 id="images"><a aria-hidden="true" class="anchor-heading" href="#images"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Images</h3>
+<p><strong>Inline</strong> (titles are options):
+<code>![alt text](/path/img.jpg "Title")</code>
+<img src="/dendron-notes/path/img.jpg" alt="alt text" title="Title"></p>
+<hr>
+<h3 id="headings"><a aria-hidden="true" class="anchor-heading" href="#headings"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Headings</h3>
+<pre><code># Heading 1
+
+## Heading 2
+</code></pre>
+<h1 id="heading-1"><a aria-hidden="true" class="anchor-heading" href="#heading-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Heading 1</h1>
+<h2 id="heading-2"><a aria-hidden="true" class="anchor-heading" href="#heading-2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Heading 2</h2>
+<hr>
+<h3 id="lists"><a aria-hidden="true" class="anchor-heading" href="#lists"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lists</h3>
+<p><strong>Ordered</strong>, without paragraphs:</p>
+<pre><code>1. Foo
+2. Bar
+</code></pre>
+<ol>
+<li>Foo</li>
+<li>Bar</li>
+</ol>
+<p><strong>Unordered</strong>, with paragraphs:</p>
+<pre><code>* A list item.
+With multiple paragraphs.
+* Bar
+</code></pre>
+<ul>
+<li>A list item.
+With multiple paragraphs.</li>
+<li>Bar</li>
+</ul>
+<p>Nested:</p>
+<pre><code>* Abacus
+    *absolute
+* Bananas
+    1. bitter
+    2. bupkis
+    3. burper
+* Cunning
+</code></pre>
+<ul>
+<li>Abacus
+*absolute</li>
+<li>Bananas
+<ol>
+<li>bitter</li>
+<li>bupkis</li>
+<li>burper</li>
+</ol>
+</li>
+<li>Cunning</li>
+</ul>
+<hr>
+<h3 id="blockquotes"><a aria-hidden="true" class="anchor-heading" href="#blockquotes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Blockquotes</h3>
+<pre><code>> Email-style angle brackets are used for blockquotes.
+>> You can also nest them.
+>>
+> * You can quote a list.
+> * Etc.
+
+> To break the nested blockquote, add a space between lines.
+
+Add another line to resume regular paragraph text.
+</code></pre>
+<blockquote>
+<p>Email-style angle brackets are used for blockquotes.</p>
+<blockquote>
+<p>You can also nest them.</p>
+<ul>
+<li>You can quote a list.</li>
+<li>Etc.</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>To break the nested blockquote, add a space between lines.</p>
+</blockquote>
+<p>Add another line to resume regular paragraph text.</p>
+<hr>
+<h3 id="code-spans"><a aria-hidden="true" class="anchor-heading" href="#code-spans"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Code spans</h3>
+<pre><code>`&#x3C;code>` spans are delimited by backticks.
+You can include literal backticks like `` `this` ``.
+</code></pre>
+<p><code>&#x3C;code></code> spans are delimited by backticks.
+You can include literal backticks like <code>`this`</code>.</p>
+<hr>
+<h3 id="preformatted-code-blocks"><a aria-hidden="true" class="anchor-heading" href="#preformatted-code-blocks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Preformatted code blocks</h3>
+<p>Use <code>```</code> to surround code blocks.</p>
+<hr>
+<h3 id="horizontal-rules"><a aria-hidden="true" class="anchor-heading" href="#horizontal-rules"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Horizontal rules</h3>
+<p>Three or more dashes or asterisks:</p>
+<pre><code>    ---
+
+    ***
+
+    - - - -
+</code></pre>
+<h3 id="manual-line-breaks"><a aria-hidden="true" class="anchor-heading" href="#manual-line-breaks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Manual line breaks</h3>
+<p>End a line with two or more spaces: </p>
+<pre><code>Roses are red,  
+Violets are blue.
+</code></pre>
+<p>Roses are red,<br>
+Violets are blue.</p>
+<hr>
+<h3 id="text-colors-and-fonts"><a aria-hidden="true" class="anchor-heading" href="#text-colors-and-fonts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Text colors and fonts</h3>
+<p><code>In his beard lived three &#x3C;span style="color:red">cardinals&#x3C;/span>.</code>
+In his beard lived three <span style="color:red">cardinals</span>.
+<code>I am in &#x3C;span style="font-family:Papyrus; font-size:4em;">LOVE!&#x3C;/span></code>
+I am in <span style="font-family:Papyrus; font-size:1em;">LOVE!</span></p>
