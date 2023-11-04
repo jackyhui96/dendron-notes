@@ -2,7 +2,7 @@
 id: 8af8ad5e-138c-4471-b670-3d3474d07401
 title: Erlang
 desc: ''
-updated: 1643029363912
+updated: 1664960344532
 created: 1602246697398
 ---
 
@@ -62,6 +62,64 @@ http://beam-wisdoms.clau.se/en/latest/
 ## ETS Scalability
 https://www.researchgate.net/publication/262172496_On_the_scalability_of_the_Erlang_term_storage
 http://blog.erlang.org/the-new-scalable-ets-ordered_set/#benchmark
+
+## pg2 better random function
+https://lethain.com/load-balancing-across-erlang-process-groups/
+
+## Look at beam code
+```bash
+erlc -S
+```
+
+## erlang permutations functions
+```erlang
+Perms =
+    fun
+        P([]) -> [[]];
+        P(L) -> [[H|T] || H <- L, T <- P(L--[H])]
+    end.
+
+Rule =
+    fun(N, Letter, Word, Boolean) ->
+        case lists:nth(N, Word) =:= Letter of
+            Boolean -> true;
+            _       -> false
+        end
+    end.
+
+[X || X <- Perms("esit?")
+    , true
+    , Rule(5, $t, X, true)
+    , Rule(2, $e, X, false)
+    , Rule(3, $s, X, false)
+    , Rule(4, $i, X, false)
+].
+```
+
+## Copy app code to remote node
+```erlang
+CopyAppTo =
+    fun(Node, App, Cookie) ->
+        application:unload(App),
+        ok = application:load(App),
+        {ok, Modules} = application:get_key(App, modules),
+        erlang:set_cookie(Node, Cookie),
+        Ret = 
+            [begin
+                {Mod, Binary, Filename} = code:get_object_code(Mod),
+                rpc:call(Node, code, soft_purge, [Mod]),
+                {module, Mod} = rpc:call(Node, code, load_binary, [Mod, Filename, Binary])
+            end|| Mod <- Modules],
+        erlang:set_cookie(Node, nocookie),
+        Ret
+    end.
+```
+
+## EPMD info
+* EPMD - defaults to 4369
+* however it acts as middleman to tell you where to go and which port to use
+* therefore erlang can use a large range of ports available when connect to other erlang nodes
+* https://www.erlang-solutions.com/blog/erlang-and-elixir-distribution-without-epmd/
 
 ## Behaviours
 Not all OTP behaviours are listed here, only thee most frequently-used ones.

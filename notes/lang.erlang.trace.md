@@ -2,7 +2,7 @@
 id: VpcygsSZNUISZBahExllB
 title: Trace
 desc: ''
-updated: 1643450656650
+updated: 1661443581815
 created: 1643450641790
 ---
 
@@ -20,13 +20,41 @@ F = fun(F, SelfPid) ->
             F(F, SelfPid)
         end
     end.
-Tracer = proc_lib:spawn(fun() -> F(F, Self) end).
+Tracer = proc_lib:spawn_link(fun() -> F(F, Self) end).
 f(Match), Match = [{'_', [], [{return_trace}]}].
 erlang:trace_pattern({pub_websocket_handler, subscribe, '_'}, Match, [local]).
 erlang:trace(all, true, [call, {tracer, Tracer}, timestamp]).
 ok.
 
 erlang:trace(all, false, [call, timestamp, {tracer, Tracer}]).
+Tracer ! stop.
+ok.
+
+
+
+%% TURN ON
+F = fun() ->
+            ets:new(messages, [public, named_table]),
+            (fun F(S, I) ->
+            receive
+              stop ->
+                ok;
+              Msg ->
+                %% SelfPid ! Msg,
+                ets:insert(messages, {I, Msg}),
+                F(S, I+1)
+            end
+        end)(hd(get('$ancestors')), 1),
+        ets:delete(messages)
+    end.
+Tracer = proc_lib:spawn_link(F).
+f(Match), Match = [{'_', [], [{return_trace}]}].
+erlang:trace_pattern({pub_websocket_handler, websocket_info, '_'}, Match, [local]).
+erlang:trace(list_to_pid("<0.4417.33>"), true, [call, {tracer, Tracer}, timestamp]).
+list_to_pid("<0.4417.33>") ! bang.
+ok.
+%% TURN OFF
+erlang:trace(list_to_pid("<0.4417.33>"), false, [call, timestamp, {tracer, Tracer}]).
 Tracer ! stop.
 ok.
 
@@ -44,7 +72,7 @@ F = fun(F, SelfPid) ->
             F(F, SelfPid)
         end
     end.
-Tracer = proc_lib:spawn(fun() -> F(F, Self) end).
+Tracer = proc_lib:spawn_link(fun() -> F(F, Self) end).
 f(Match), Match = [{'_', [], [{return_trace}]}].
 erlang:trace_pattern({'_', '_', '_'}, Match, [local]).
 erlang:trace(all, true, [call, {tracer, Tracer}, timestamp]).
@@ -67,7 +95,7 @@ garbage_collect_tracer_process_init(Pid) ->
             erlang:trace(Pid, true, [garbage_collection, timestamp]),
             trace_fun(Pid)
         end,
-    spawn(TracerFun).
+    spawn_link(TracerFun).
 
 trace_fun(Pid) ->
     InitialAcc = {undefined, undefined,{0,0,0}},

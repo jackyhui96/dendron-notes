@@ -2,14 +2,14 @@
 id: 69f94154-a07b-40e2-8322-14230a441697
 title: Elvis
 desc: ''
-updated: 1636374198906
+updated: 1665151104341
 created: 1611321032487
 ---
 
 
 # Elivis
 ## Run elvis against changes since git commit
-elvis rock git-branch origin/HEAD
+elvis git-branch origin/HEAD
 
 
 ## my command

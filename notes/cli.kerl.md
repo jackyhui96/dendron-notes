@@ -2,7 +2,7 @@
 id: c00a4301-e3a1-44d7-b5d9-b2435b020a51
 title: Kerl
 desc: ''
-updated: 1644427392706
+updated: 1670509805152
 created: 1611320860843
 ---
 
@@ -13,6 +13,9 @@ created: 1611320860843
 . <PATH_TO_KERL_INSTALLS>/<VSN>/activate
 ## e.g.
 . /usr/local/erl_rel/22.3/activate
+
+## find erl path
+. $(dirname $(which erl | grep -Po ".*(?=/bin/erl)"))/22.3/activate
 ```
 
 ## Installing erlang
